@@ -1,0 +1,106 @@
+/**
+ */
+package rpg_modeling;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Equipment</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link rpg_modeling.Equipment#getPlayer <em>Player</em>}</li>
+ *   <li>{@link rpg_modeling.Equipment#getInventory <em>Inventory</em>}</li>
+ *   <li>{@link rpg_modeling.Equipment#getArmor <em>Armor</em>}</li>
+ * </ul>
+ *
+ * @see rpg_modeling.Rpg_modelingPackage#getEquipment()
+ * @model
+ * @generated
+ */
+public interface Equipment extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Player</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link rpg_modeling.Character#getEquipment <em>Equipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Player</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Player</em>' reference.
+	 * @see #setPlayer(rpg_modeling.Character)
+	 * @see rpg_modeling.Rpg_modelingPackage#getEquipment_Player()
+	 * @see rpg_modeling.Character#getEquipment
+	 * @model opposite="equipment" required="true"
+	 * @generated
+	 */
+	rpg_modeling.Character getPlayer();
+
+	/**
+	 * Sets the value of the '{@link rpg_modeling.Equipment#getPlayer <em>Player</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Player</em>' reference.
+	 * @see #getPlayer()
+	 * @generated
+	 */
+	void setPlayer(rpg_modeling.Character value);
+
+	/**
+	 * Returns the value of the '<em><b>Inventory</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Inventory</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory</em>' containment reference.
+	 * @see #setInventory(PlayerInventory)
+	 * @see rpg_modeling.Rpg_modelingPackage#getEquipment_Inventory()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	PlayerInventory getInventory();
+
+	/**
+	 * Sets the value of the '{@link rpg_modeling.Equipment#getInventory <em>Inventory</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inventory</em>' containment reference.
+	 * @see #getInventory()
+	 * @generated
+	 */
+	void setInventory(PlayerInventory value);
+
+	/**
+	 * Returns the value of the '<em><b>Armor</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Armor</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Armor</em>' containment reference.
+	 * @see #setArmor(PlayerArmor)
+	 * @see rpg_modeling.Rpg_modelingPackage#getEquipment_Armor()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	PlayerArmor getArmor();
+
+	/**
+	 * Sets the value of the '{@link rpg_modeling.Equipment#getArmor <em>Armor</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Armor</em>' containment reference.
+	 * @see #getArmor()
+	 * @generated
+	 */
+	void setArmor(PlayerArmor value);
+
+} // Equipment

@@ -6,46 +6,46 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>rpg_modeling.ecore</foreignModel>
   <genPackages prefix="Rpg_modeling" disposableProviderFactory="true" ecorePackage="rpg_modeling.ecore#/">
-    <genClasses ecoreClass="rpg_modeling.ecore#//Guild">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/officer"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/master"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/member"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/initiate"/>
-    </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Faction">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Faction/guild"/>
-    </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Player">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/playeringuild"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/playernotinguild"/>
-    </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Master"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Officer"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Member"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Initiate"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Character">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Character/equipment"/>
-    </genClasses>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="rpg_modeling.ecore#//Grades">
+      <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//Grades/MASTER"/>
+      <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//Grades/OFFICER"/>
+      <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//Grades/MEMBER"/>
+      <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//Grades/INTIATE"/>
+    </genEnums>
     <genClasses ecoreClass="rpg_modeling.ecore#//NonPlayerCharacter"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//PlayerInGuild">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//PlayerInGuild/grade"/>
-    </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Warrior"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Archer"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Assassin"/>
     <genClasses ecoreClass="rpg_modeling.ecore#//Wizard"/>
-    <genClasses image="false" ecoreClass="rpg_modeling.ecore#//PlayerNotInGuild"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Grade">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Grade/playeringuild"/>
-    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Archer"/>
     <genClasses ecoreClass="rpg_modeling.ecore#//Equipment">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Equipment/player"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Equipment/inventory"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Equipment/armor"/>
     </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Inventory"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Armor"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//PlayerArmor"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Assassin"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Player">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/class"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/guild"/>
+    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Warrior"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Class/player"/>
+    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Guild">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/guildinventory"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/player"/>
+    </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//GameObject"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//ArmorObject"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Faction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Faction/guild"/>
+    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//EquipmentObject"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//PlayerInventory"/>
+    <genClasses image="false" ecoreClass="rpg_modeling.ecore#//Character">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Character/equipment"/>
+    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//QuestObject"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//ConsumableObject"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//GuildInventory"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Inventory"/>
   </genPackages>
 </genmodel:GenModel>
