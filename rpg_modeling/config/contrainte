@@ -1,0 +1,4 @@
+Context Guild inv : self.members -> select(player | player.grade = Grade::MASTER) -> size()=2
+Context Guild inv : self.members -> select(player | player.grade = Grade::OFFICIER) -> size()<=2
+Context Guild inv : self.members -> select(player | player.grade = Grade::MEMBER) -> size()<=20
+Context Guild inv : self.members -> select(player | player.grade = Grade::INITIATE) -> size()<=20
