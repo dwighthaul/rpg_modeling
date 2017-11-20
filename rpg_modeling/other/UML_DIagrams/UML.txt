@@ -1,0 +1,97 @@
+@startuml
+
+class Faction{
+
+}
+class Guild{
+
+}
+
+class Master{
+
+}
+
+class Officier{
+
+}
+
+class Member{
+
+}
+
+class Initiate{
+
+}
+
+class Character{
+
+}
+
+class NonPlayerCharacter{
+
+}
+
+class Player{
+
+}
+
+class Class{
+
+}
+
+class Warrior{
+
+}
+
+class Mage{
+
+}
+
+class Archer{
+
+}
+
+class Assassin{
+
+}
+
+class Inventory{
+  Int gold;
+  List<object> listOfObject;
+}
+
+class GuildInventory{
+
+}
+
+class PlayerInventory{
+
+}
+
+class Equipment{
+
+}
+
+Character <|-- NonPlayerCharacter
+Character <|-- Player
+Player <|-- Master
+Player <|-- Officier
+Player <|-- Member
+Player <|-- Initiate
+Guild "1" *-- "1" Master : contains
+Guild "1" *-- "0..2" Officier : contains
+Guild "1" *-- "0..*" Member : contains
+Guild "1" *-- "0..*" Initiate : contains
+Player "1" *-- "1" Class : contains
+Class <|-- Warrior
+Class <|-- Mage
+Class <|-- Archer
+Class <|-- Assassin
+Faction "1" o-- "0..*" Guild
+Inventory <|-- PlayerInventory
+Inventory <|-- GuildInventory
+Guild "1" *-- "1" GuildInventory : contains
+Player "1" *-- "1" PlayerInventory : contains
+Player "1" *-- "1" Equipment : contains
+
+@enduml
