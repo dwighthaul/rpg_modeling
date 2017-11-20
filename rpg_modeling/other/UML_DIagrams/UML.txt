@@ -11,7 +11,7 @@ class Master{
 
 }
 
-class Officier{
+class Officer{
 
 }
 
@@ -43,7 +43,7 @@ class Warrior{
 
 }
 
-class Mage{
+class Wizard{
 
 }
 

@@ -1,3 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    name="rpg_modeling" nsURI="http://www.example.org/rpg_modeling" nsPrefix="rpg_modeling"/>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rpg_modeling" nsURI="http://www.example.org/rpg_modeling" nsPrefix="rpg_modeling">
+  <eClassifiers xsi:type="ecore:EClass" name="Guild">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="officer" upperBound="2"
+        eType="#//Officer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="master" lowerBound="1"
+        eType="#//Master" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" upperBound="20"
+        eType="#//Member" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="initiate" upperBound="20"
+        eType="#//Initiate" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Faction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="guild" upperBound="-1"
+        eType="#//Guild" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Player">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playeringuild" eType="#//PlayerInGuild"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playernotinguild" eType="#//PlayerNotInGuild"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Master" eSuperTypes="#//Grade"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Officer" eSuperTypes="#//Grade"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Member" eSuperTypes="#//Grade"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Initiate" eSuperTypes="#//Grade"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Character" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" eType="#//Equipment"
+        eOpposite="#//Equipment/player"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NonPlayerCharacter" eSuperTypes="#//Character"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PlayerInGuild" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="grade" lowerBound="1" eType="#//Grade"
+        eOpposite="#//Grade/playeringuild"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Warrior" eSuperTypes="#//Player"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Archer" eSuperTypes="#//Player"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Assassin" eSuperTypes="#//Player"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Wizard" eSuperTypes="#//Player"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PlayerNotInGuild" abstract="true" interface="true"
+      eSuperTypes="#//Character"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Grade">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playeringuild" lowerBound="1"
+        eType="#//PlayerInGuild" eOpposite="#//PlayerInGuild/grade"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Equipment">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="player" eType="#//Character"
+        eOpposite="#//Character/equipment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inventory" lowerBound="1"
+        eType="#//Inventory" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="armor" lowerBound="1" eType="#//Armor"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Inventory"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Armor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GameObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArmorObject"/>
+</ecore:EPackage>
