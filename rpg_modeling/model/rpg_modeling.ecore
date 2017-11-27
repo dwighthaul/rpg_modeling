@@ -20,10 +20,12 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlayerArmor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="7"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="8"
         eType="#//EquipmentObject" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        iD="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Assassin" eSuperTypes="#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="Player" eSuperTypes="#//Character">
@@ -45,12 +47,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" upperBound="-1"
         eType="#//Player" eOpposite="#//Player/guild"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GameObject" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GameObject" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Faction">
     <eStructuralFeatures xsi:type="ecore:EReference" name="guild" upperBound="-1"
         eType="#//Guild" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EquipmentObject" eSuperTypes="#//GameObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EquipmentObject" eSuperTypes="#//GameObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//CategoryObject"
+        defaultValueLiteral="DEFAULT"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlayerInventory" eSuperTypes="#//Inventory">
     <eStructuralFeatures xsi:type="ecore:EReference" name="consumableobject" upperBound="-1"
         eType="#//ConsumableObject" containment="true"/>
@@ -63,8 +73,31 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" lowerBound="1"
         eType="#//Equipment" eOpposite="#//Equipment/player"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QuestObject" eSuperTypes="#//GameObject"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ConsumableObject" eSuperTypes="#//GameObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QuestObject" eSuperTypes="#//GameObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_idQuest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConsumableObject" eSuperTypes="#//GameObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEffect" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newAttribute" eType="#//TypeObject"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GuildInventory" eSuperTypes="#//Inventory"/>
   <eClassifiers xsi:type="ecore:EClass" name="Inventory" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="CategoryObject">
+    <eLiterals name="HEAD"/>
+    <eLiterals name="ARM" value="1"/>
+    <eLiterals name="CHEST" value="2"/>
+    <eLiterals name="LEG" value="3"/>
+    <eLiterals name="RIGHT_HAND" value="4"/>
+    <eLiterals name="LEFT_HAND" value="5"/>
+    <eLiterals name="HAND" value="6"/>
+    <eLiterals name="FOOT" value="7"/>
+    <eLiterals name="DEFAULT" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeObject">
+    <eLiterals name="HEAL"/>
+    <eLiterals name="POISON" value="1"/>
+    <eLiterals name="THUNDER" value="3"/>
+    <eLiterals name="DEFAULT" value="8"/>
+  </eClassifiers>
 </ecore:EPackage>
