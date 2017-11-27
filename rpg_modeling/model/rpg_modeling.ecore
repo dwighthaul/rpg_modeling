@@ -38,10 +38,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlayerArmor">
     <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="8"
         eType="#//EquipmentObject" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
-        iD="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
-        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Assassin" eSuperTypes="#//Class">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="skill" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEList"
@@ -105,8 +103,7 @@
         eType="#//Equipment" eOpposite="#//Equipment/player"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="QuestObject" eSuperTypes="#//GameObject">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_idQuest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
-        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_idQuest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsumableObject" eSuperTypes="#//GameObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEffect" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
