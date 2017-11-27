@@ -7,6 +7,7 @@
     <eLiterals name="OFFICER" value="1"/>
     <eLiterals name="MEMBER" value="2"/>
     <eLiterals name="INTIATE" value="3"/>
+    <eLiterals name="NO_MEMBER" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Wizard" eSuperTypes="#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="Archer" eSuperTypes="#//Class"/>
@@ -18,16 +19,23 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="armor" lowerBound="1" eType="#//PlayerArmor"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlayerArmor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PlayerArmor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="7"
+        eType="#//EquipmentObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Assassin" eSuperTypes="#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="Player" eSuperTypes="#//Character">
     <eStructuralFeatures xsi:type="ecore:EReference" name="class" lowerBound="1" eType="#//Class"
         eOpposite="#//Class/player"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="guild" eType="#//Guild"
         eOpposite="#//Guild/player"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" eType="#//Grades"
+        defaultValueLiteral="NO_MEMBER"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Warrior" eSuperTypes="#//Class"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Class">
+  <eClassifiers xsi:type="ecore:EClass" name="Class" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" lowerBound="1"
         eType="#//Player" eOpposite="#//Player/class"/>
   </eClassifiers>
@@ -37,13 +45,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" upperBound="-1"
         eType="#//Player" eOpposite="#//Player/guild"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GameObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GameObject" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Faction">
     <eStructuralFeatures xsi:type="ecore:EReference" name="guild" upperBound="-1"
         eType="#//Guild" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EquipmentObject" eSuperTypes="#//GameObject"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PlayerInventory" eSuperTypes="#//Inventory"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PlayerInventory" eSuperTypes="#//Inventory">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consumableobject" upperBound="-1"
+        eType="#//ConsumableObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="questobject" upperBound="-1"
+        eType="#//QuestObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="-1"
+        eType="#//EquipmentObject" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Character" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" lowerBound="1"
         eType="#//Equipment" eOpposite="#//Equipment/player"/>
@@ -51,5 +66,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="QuestObject" eSuperTypes="#//GameObject"/>
   <eClassifiers xsi:type="ecore:EClass" name="ConsumableObject" eSuperTypes="#//GameObject"/>
   <eClassifiers xsi:type="ecore:EClass" name="GuildInventory" eSuperTypes="#//Inventory"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Inventory"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inventory" abstract="true"/>
 </ecore:EPackage>
