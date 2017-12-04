@@ -30,17 +30,7 @@
       <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//TypeObject/THUNDER"/>
       <genEnumLiterals ecoreEnumLiteral="rpg_modeling.ecore#//TypeObject/DEFAULT"/>
     </genEnums>
-    <genClasses ecoreClass="rpg_modeling.ecore#//NonPlayerCharacter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/constitution"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/hp"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/luck"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/mp"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/wisdom"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/dexterity"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/strenght"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//NonPlayerCharacter/intelligence"/>
-    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//NonPlayerCharacter"/>
     <genClasses ecoreClass="rpg_modeling.ecore#//Wizard">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Wizard/skill"/>
     </genClasses>
@@ -54,7 +44,13 @@
     <genClasses ecoreClass="rpg_modeling.ecore#//PlayerArmor">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//PlayerArmor/equipmentobject"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/head"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/arm"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/chest"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/leg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/right_hand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/left_hand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/hand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//PlayerArmor/foot"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//Assassin">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Assassin/skill"/>
@@ -62,15 +58,6 @@
     <genClasses ecoreClass="rpg_modeling.ecore#//Player">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/guild"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/role"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/hp"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/mp"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/strenght"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/constitution"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/dexterity"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/intelligence"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/wisdom"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Player/luck"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Player/class"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//Warrior">
@@ -80,6 +67,8 @@
     <genClasses ecoreClass="rpg_modeling.ecore#//Guild">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/guildinventory"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Guild/player"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Guild/_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Guild/name"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//GameObject">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//GameObject/_id"/>
@@ -88,16 +77,23 @@
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//Faction">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Faction/guild"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Faction/_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Faction/name"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//EquipmentObject">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//EquipmentObject/type"/>
     </genClasses>
-    <genClasses ecoreClass="rpg_modeling.ecore#//PlayerInventory">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//PlayerInventory/consumableobject"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//PlayerInventory/questobject"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//PlayerInventory/equipmentobject"/>
-    </genClasses>
+    <genClasses ecoreClass="rpg_modeling.ecore#//PlayerInventory"/>
     <genClasses image="false" ecoreClass="rpg_modeling.ecore#//Character">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/hp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/mp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/strenght"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/constitution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/dexterity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/intelligence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/wisdom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Character/luck"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Character/equipment"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//QuestObject">
@@ -108,7 +104,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//ConsumableObject/newAttribute"/>
     </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//GuildInventory"/>
-    <genClasses ecoreClass="rpg_modeling.ecore#//Inventory"/>
+    <genClasses ecoreClass="rpg_modeling.ecore#//Inventory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rpg_modeling.ecore#//Inventory/qteMoney"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//Inventory/gameobject"/>
+    </genClasses>
     <genClasses ecoreClass="rpg_modeling.ecore#//GameEngine">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//GameEngine/faction"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rpg_modeling.ecore#//GameEngine/character"/>

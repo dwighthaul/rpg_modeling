@@ -4,6 +4,7 @@ package rpg_modeling.impl;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -11,6 +12,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -29,6 +31,8 @@ import rpg_modeling.Rpg_modelingPackage;
  * </p>
  * <ul>
  *   <li>{@link rpg_modeling.impl.FactionImpl#getGuild <em>Guild</em>}</li>
+ *   <li>{@link rpg_modeling.impl.FactionImpl#get_id <em>id</em>}</li>
+ *   <li>{@link rpg_modeling.impl.FactionImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -43,6 +47,43 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
    * @ordered
    */
   protected EList<Guild> guild;
+
+  /**
+   * The default value of the '{@link #get_id() <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #get_id()
+   * @generated
+   * @ordered
+   */
+  protected static final int _ID_EDEFAULT = 0;
+  /**
+   * The cached value of the '{@link #get_id() <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #get_id()
+   * @generated
+   * @ordered
+   */
+  protected int _id = _ID_EDEFAULT;
+  /**
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
+  protected static final String NAME_EDEFAULT = null;
+  /**
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
+  protected String name = NAME_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -80,6 +121,48 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
    * <!-- end-user-doc -->
    * @generated
    */
+  public int get_id() {
+    return _id;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void set_id(int new_id) {
+    int old_id = _id;
+    _id = new_id;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, Rpg_modelingPackage.FACTION__ID, old_id, _id));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getName() {
+    return name;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setName(String newName) {
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, Rpg_modelingPackage.FACTION__NAME, oldName, name));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
@@ -99,6 +182,10 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
     switch (featureID) {
       case Rpg_modelingPackage.FACTION__GUILD:
         return getGuild();
+      case Rpg_modelingPackage.FACTION__ID:
+        return get_id();
+      case Rpg_modelingPackage.FACTION__NAME:
+        return getName();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -116,6 +203,12 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
         getGuild().clear();
         getGuild().addAll((Collection<? extends Guild>)newValue);
         return;
+      case Rpg_modelingPackage.FACTION__ID:
+        set_id((Integer)newValue);
+        return;
+      case Rpg_modelingPackage.FACTION__NAME:
+        setName((String)newValue);
+        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -131,6 +224,12 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
       case Rpg_modelingPackage.FACTION__GUILD:
         getGuild().clear();
         return;
+      case Rpg_modelingPackage.FACTION__ID:
+        set_id(_ID_EDEFAULT);
+        return;
+      case Rpg_modelingPackage.FACTION__NAME:
+        setName(NAME_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -145,8 +244,30 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
     switch (featureID) {
       case Rpg_modelingPackage.FACTION__GUILD:
         return guild != null && !guild.isEmpty();
+      case Rpg_modelingPackage.FACTION__ID:
+        return _id != _ID_EDEFAULT;
+      case Rpg_modelingPackage.FACTION__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
     }
     return super.eIsSet(featureID);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String toString() {
+    if (eIsProxy()) return super.toString();
+
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (_id: ");
+    result.append(_id);
+    result.append(", name: ");
+    result.append(name);
+    result.append(')');
+    return result.toString();
   }
 
 } //FactionImpl

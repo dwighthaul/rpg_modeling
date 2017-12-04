@@ -283,87 +283,6 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getNonPlayerCharacter_Constitution() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Hp() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Luck() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Name() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Mp() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Wisdom() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(5);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Dexterity() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(6);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Strenght() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getNonPlayerCharacter_Intelligence() {
-    return (EAttribute)nonPlayerCharacterEClass.getEStructuralFeatures().get(8);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getWizard() {
     return wizardEClass;
   }
@@ -454,8 +373,62 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPlayerArmor_Chest() {
+  public EAttribute getPlayerArmor_Arm() {
     return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Chest() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Leg() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Right_hand() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Left_hand() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(6);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Hand() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(7);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPlayerArmor_Foot() {
+    return (EAttribute)playerArmorEClass.getEStructuralFeatures().get(8);
   }
 
   /**
@@ -508,89 +481,8 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPlayer_Name() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Hp() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Mp() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Strenght() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(5);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Constitution() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(6);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Dexterity() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Intelligence() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(8);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Wisdom() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(9);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getPlayer_Luck() {
-    return (EAttribute)playerEClass.getEStructuralFeatures().get(10);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getPlayer_Class() {
-    return (EReference)playerEClass.getEStructuralFeatures().get(11);
+    return (EReference)playerEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -652,6 +544,24 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getGuild__id() {
+    return (EAttribute)guildEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getGuild_Name() {
+    return (EAttribute)guildEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getGameObject() {
     return gameObjectEClass;
   }
@@ -706,6 +616,24 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getFaction__id() {
+    return (EAttribute)factionEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getFaction_Name() {
+    return (EAttribute)factionEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getEquipmentObject() {
     return equipmentObjectEClass;
   }
@@ -733,33 +661,6 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPlayerInventory_Consumableobject() {
-    return (EReference)playerInventoryEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getPlayerInventory_Questobject() {
-    return (EReference)playerInventoryEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getPlayerInventory_Equipmentobject() {
-    return (EReference)playerInventoryEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getCharacter() {
     return characterEClass;
   }
@@ -769,8 +670,89 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getCharacter_Name() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Hp() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Mp() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Strenght() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Constitution() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Dexterity() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Intelligence() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(6);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Wisdom() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(7);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getCharacter_Luck() {
+    return (EAttribute)characterEClass.getEStructuralFeatures().get(8);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EReference getCharacter_Equipment() {
-    return (EReference)characterEClass.getEStructuralFeatures().get(0);
+    return (EReference)characterEClass.getEStructuralFeatures().get(9);
   }
 
   /**
@@ -834,6 +816,24 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
    */
   public EClass getInventory() {
     return inventoryEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getInventory_QteMoney() {
+    return (EAttribute)inventoryEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getInventory_Gameobject() {
+    return (EReference)inventoryEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -919,15 +919,6 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
 
     // Create classes and their features
     nonPlayerCharacterEClass = createEClass(NON_PLAYER_CHARACTER);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__CONSTITUTION);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__HP);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__LUCK);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__NAME);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__MP);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__WISDOM);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__DEXTERITY);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__STRENGHT);
-    createEAttribute(nonPlayerCharacterEClass, NON_PLAYER_CHARACTER__INTELLIGENCE);
 
     wizardEClass = createEClass(WIZARD);
     createEAttribute(wizardEClass, WIZARD__SKILL);
@@ -942,7 +933,13 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     playerArmorEClass = createEClass(PLAYER_ARMOR);
     createEReference(playerArmorEClass, PLAYER_ARMOR__EQUIPMENTOBJECT);
     createEAttribute(playerArmorEClass, PLAYER_ARMOR__HEAD);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__ARM);
     createEAttribute(playerArmorEClass, PLAYER_ARMOR__CHEST);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__LEG);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__RIGHT_HAND);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__LEFT_HAND);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__HAND);
+    createEAttribute(playerArmorEClass, PLAYER_ARMOR__FOOT);
 
     assassinEClass = createEClass(ASSASSIN);
     createEAttribute(assassinEClass, ASSASSIN__SKILL);
@@ -950,15 +947,6 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     playerEClass = createEClass(PLAYER);
     createEReference(playerEClass, PLAYER__GUILD);
     createEAttribute(playerEClass, PLAYER__ROLE);
-    createEAttribute(playerEClass, PLAYER__NAME);
-    createEAttribute(playerEClass, PLAYER__HP);
-    createEAttribute(playerEClass, PLAYER__MP);
-    createEAttribute(playerEClass, PLAYER__STRENGHT);
-    createEAttribute(playerEClass, PLAYER__CONSTITUTION);
-    createEAttribute(playerEClass, PLAYER__DEXTERITY);
-    createEAttribute(playerEClass, PLAYER__INTELLIGENCE);
-    createEAttribute(playerEClass, PLAYER__WISDOM);
-    createEAttribute(playerEClass, PLAYER__LUCK);
     createEReference(playerEClass, PLAYER__CLASS);
 
     warriorEClass = createEClass(WARRIOR);
@@ -969,6 +957,8 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     guildEClass = createEClass(GUILD);
     createEReference(guildEClass, GUILD__GUILDINVENTORY);
     createEReference(guildEClass, GUILD__PLAYER);
+    createEAttribute(guildEClass, GUILD__ID);
+    createEAttribute(guildEClass, GUILD__NAME);
 
     gameObjectEClass = createEClass(GAME_OBJECT);
     createEAttribute(gameObjectEClass, GAME_OBJECT__ID);
@@ -977,16 +967,24 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
 
     factionEClass = createEClass(FACTION);
     createEReference(factionEClass, FACTION__GUILD);
+    createEAttribute(factionEClass, FACTION__ID);
+    createEAttribute(factionEClass, FACTION__NAME);
 
     equipmentObjectEClass = createEClass(EQUIPMENT_OBJECT);
     createEAttribute(equipmentObjectEClass, EQUIPMENT_OBJECT__TYPE);
 
     playerInventoryEClass = createEClass(PLAYER_INVENTORY);
-    createEReference(playerInventoryEClass, PLAYER_INVENTORY__CONSUMABLEOBJECT);
-    createEReference(playerInventoryEClass, PLAYER_INVENTORY__QUESTOBJECT);
-    createEReference(playerInventoryEClass, PLAYER_INVENTORY__EQUIPMENTOBJECT);
 
     characterEClass = createEClass(CHARACTER);
+    createEAttribute(characterEClass, CHARACTER__NAME);
+    createEAttribute(characterEClass, CHARACTER__HP);
+    createEAttribute(characterEClass, CHARACTER__MP);
+    createEAttribute(characterEClass, CHARACTER__STRENGHT);
+    createEAttribute(characterEClass, CHARACTER__CONSTITUTION);
+    createEAttribute(characterEClass, CHARACTER__DEXTERITY);
+    createEAttribute(characterEClass, CHARACTER__INTELLIGENCE);
+    createEAttribute(characterEClass, CHARACTER__WISDOM);
+    createEAttribute(characterEClass, CHARACTER__LUCK);
     createEReference(characterEClass, CHARACTER__EQUIPMENT);
 
     questObjectEClass = createEClass(QUEST_OBJECT);
@@ -999,6 +997,8 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     guildInventoryEClass = createEClass(GUILD_INVENTORY);
 
     inventoryEClass = createEClass(INVENTORY);
+    createEAttribute(inventoryEClass, INVENTORY__QTE_MONEY);
+    createEReference(inventoryEClass, INVENTORY__GAMEOBJECT);
 
     gameEngineEClass = createEClass(GAME_ENGINE);
     createEReference(gameEngineEClass, GAME_ENGINE__FACTION);
@@ -1055,15 +1055,6 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
 
     // Initialize classes, features, and operations; add parameters
     initEClass(nonPlayerCharacterEClass, NonPlayerCharacter.class, "NonPlayerCharacter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getNonPlayerCharacter_Constitution(), ecorePackage.getEInt(), "constitution", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Hp(), ecorePackage.getEInt(), "hp", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Luck(), ecorePackage.getEInt(), "luck", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Name(), ecorePackage.getEString(), "name", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Mp(), ecorePackage.getEInt(), "mp", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Wisdom(), ecorePackage.getEInt(), "wisdom", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Dexterity(), ecorePackage.getEInt(), "dexterity", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Strenght(), ecorePackage.getEInt(), "strenght", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNonPlayerCharacter_Intelligence(), ecorePackage.getEInt(), "intelligence", null, 0, 1, NonPlayerCharacter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(wizardEClass, Wizard.class, "Wizard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getWizard_Skill(), ecorePackage.getEEList(), "skill", null, 0, 1, Wizard.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1078,7 +1069,13 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     initEClass(playerArmorEClass, PlayerArmor.class, "PlayerArmor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getPlayerArmor_Equipmentobject(), this.getEquipmentObject(), null, "equipmentobject", null, 0, 8, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPlayerArmor_Head(), theXMLTypePackage.getInt(), "head", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Arm(), theXMLTypePackage.getInt(), "arm", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPlayerArmor_Chest(), theXMLTypePackage.getInt(), "chest", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Leg(), theXMLTypePackage.getInt(), "leg", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Right_hand(), theXMLTypePackage.getInt(), "right_hand", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Left_hand(), theXMLTypePackage.getInt(), "left_hand", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Hand(), theXMLTypePackage.getInt(), "hand", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPlayerArmor_Foot(), theXMLTypePackage.getInt(), "foot", null, 0, 1, PlayerArmor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(assassinEClass, Assassin.class, "Assassin", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAssassin_Skill(), ecorePackage.getEEList(), "skill", null, 0, 1, Assassin.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1086,16 +1083,7 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     initEClass(playerEClass, Player.class, "Player", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getPlayer_Guild(), this.getGuild(), this.getGuild_Player(), "guild", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPlayer_Role(), this.getGrades(), "role", "NO_MEMBER", 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Name(), ecorePackage.getEString(), "name", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Hp(), ecorePackage.getEInt(), "hp", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Mp(), ecorePackage.getEInt(), "mp", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Strenght(), ecorePackage.getEInt(), "strenght", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Constitution(), ecorePackage.getEInt(), "constitution", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Dexterity(), ecorePackage.getEInt(), "dexterity", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Intelligence(), ecorePackage.getEInt(), "intelligence", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Wisdom(), ecorePackage.getEInt(), "wisdom", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayer_Luck(), ecorePackage.getEInt(), "luck", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPlayer_Class(), this.getJob(), null, "class", null, 0, -1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPlayer_Class(), this.getJob(), null, "class", null, 1, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(warriorEClass, Warrior.class, "Warrior", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getWarrior_Skill(), ecorePackage.getEEList(), "skill", null, 0, 1, Warrior.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1105,6 +1093,8 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
     initEClass(guildEClass, Guild.class, "Guild", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getGuild_Guildinventory(), this.getGuildInventory(), null, "guildinventory", null, 1, 1, Guild.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getGuild_Player(), this.getPlayer(), this.getPlayer_Guild(), "player", null, 0, -1, Guild.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getGuild__id(), theXMLTypePackage.getInt(), "_id", null, 0, 1, Guild.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getGuild_Name(), theXMLTypePackage.getName_(), "name", null, 0, 1, Guild.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(gameObjectEClass, GameObject.class, "GameObject", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getGameObject__id(), theXMLTypePackage.getInt(), "_id", null, 0, 1, GameObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1113,28 +1103,38 @@ public class Rpg_modelingPackageImpl extends EPackageImpl implements Rpg_modelin
 
     initEClass(factionEClass, Faction.class, "Faction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getFaction_Guild(), this.getGuild(), null, "guild", null, 0, -1, Faction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getFaction__id(), theXMLTypePackage.getInt(), "_id", null, 0, 1, Faction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getFaction_Name(), theXMLTypePackage.getName_(), "name", null, 0, 1, Faction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(equipmentObjectEClass, EquipmentObject.class, "EquipmentObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getEquipmentObject_Type(), this.getCategoryObject(), "type", "DEFAULT", 0, 1, EquipmentObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(playerInventoryEClass, PlayerInventory.class, "PlayerInventory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getPlayerInventory_Consumableobject(), this.getConsumableObject(), null, "consumableobject", null, 0, -1, PlayerInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPlayerInventory_Questobject(), this.getQuestObject(), null, "questobject", null, 0, -1, PlayerInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPlayerInventory_Equipmentobject(), this.getEquipmentObject(), null, "equipmentobject", null, 0, -1, PlayerInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(characterEClass, rpg_modeling.Character.class, "Character", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getCharacter_Equipment(), this.getEquipment(), null, "equipment", null, 0, -1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Name(), ecorePackage.getEString(), "name", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Hp(), ecorePackage.getEInt(), "hp", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Mp(), ecorePackage.getEInt(), "mp", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Strenght(), ecorePackage.getEInt(), "strenght", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Constitution(), ecorePackage.getEInt(), "constitution", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Dexterity(), ecorePackage.getEInt(), "dexterity", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Intelligence(), ecorePackage.getEInt(), "intelligence", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Wisdom(), ecorePackage.getEInt(), "wisdom", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCharacter_Luck(), ecorePackage.getEInt(), "luck", null, 0, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getCharacter_Equipment(), this.getEquipment(), null, "equipment", null, 1, 1, rpg_modeling.Character.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(questObjectEClass, QuestObject.class, "QuestObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getQuestObject__idQuest(), theXMLTypePackage.getInt(), "_idQuest", null, 0, 1, QuestObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(consumableObjectEClass, ConsumableObject.class, "ConsumableObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getConsumableObject_TimeEffect(), theXMLTypePackage.getInt(), "timeEffect", null, 0, 1, ConsumableObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getConsumableObject_NewAttribute(), this.getTypeObject(), "newAttribute", null, 0, 1, ConsumableObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConsumableObject_NewAttribute(), this.getTypeObject(), "newAttribute", "DEFAULT", 0, 1, ConsumableObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(guildInventoryEClass, GuildInventory.class, "GuildInventory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(inventoryEClass, Inventory.class, "Inventory", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getInventory_QteMoney(), theXMLTypePackage.getInt(), "qteMoney", null, 0, 1, Inventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInventory_Gameobject(), this.getGameObject(), null, "gameobject", null, 0, -1, Inventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(gameEngineEClass, GameEngine.class, "GameEngine", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getGameEngine_Faction(), this.getFaction(), null, "faction", null, 0, -1, GameEngine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rpg_modeling" nsURI="http://www.example.org/rpg_modeling" nsPrefix="rpg_modeling">
-  <eClassifiers xsi:type="ecore:EClass" name="NonPlayerCharacter" eSuperTypes="#//Character">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constitution" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="luck" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wisdom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dexterity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strenght" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intelligence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NonPlayerCharacter" eSuperTypes="#//Character"/>
   <eClassifiers xsi:type="ecore:EEnum" name="Grades">
     <eLiterals name="MASTER"/>
     <eLiterals name="OFFICER" value="1"/>
@@ -37,7 +27,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="8"
         eType="#//EquipmentObject" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="head" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="arm" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="chest" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="leg" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="right_hand" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="left_hand" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hand" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="foot" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Assassin" eSuperTypes="#//Job">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="skill" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEList"
@@ -48,17 +44,8 @@
         eOpposite="#//Guild/player"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" eType="#//Grades"
         defaultValueLiteral="NO_MEMBER"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strenght" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constitution" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dexterity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intelligence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wisdom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="luck" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="class" upperBound="-1"
-        eType="#//Job" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="class" lowerBound="1" eType="#//Job"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Warrior" eSuperTypes="#//Job">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="skill" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEList"
@@ -70,6 +57,8 @@
         eType="#//GuildInventory" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" upperBound="-1"
         eType="#//Player" eOpposite="#//Player/guild"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameObject" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
@@ -80,21 +69,25 @@
   <eClassifiers xsi:type="ecore:EClass" name="Faction">
     <eStructuralFeatures xsi:type="ecore:EReference" name="guild" upperBound="-1"
         eType="#//Guild" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EquipmentObject" eSuperTypes="#//GameObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//CategoryObject"
         defaultValueLiteral="DEFAULT"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlayerInventory" eSuperTypes="#//Inventory">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="consumableobject" upperBound="-1"
-        eType="#//ConsumableObject" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="questobject" upperBound="-1"
-        eType="#//QuestObject" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="equipmentobject" upperBound="-1"
-        eType="#//EquipmentObject" containment="true"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PlayerInventory" eSuperTypes="#//Inventory"/>
   <eClassifiers xsi:type="ecore:EClass" name="Character" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strenght" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constitution" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dexterity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intelligence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wisdom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="luck" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" lowerBound="1"
         eType="#//Equipment" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="QuestObject" eSuperTypes="#//GameObject">
@@ -102,10 +95,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsumableObject" eSuperTypes="#//GameObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEffect" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newAttribute" eType="#//TypeObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newAttribute" eType="#//TypeObject"
+        defaultValueLiteral="DEFAULT"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GuildInventory" eSuperTypes="#//Inventory"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Inventory" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inventory" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="qteMoney" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gameobject" upperBound="-1"
+        eType="#//GameObject" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CategoryObject">
     <eLiterals name="HEAD"/>
     <eLiterals name="ARM" value="1"/>

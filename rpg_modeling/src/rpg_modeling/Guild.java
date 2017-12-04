@@ -17,6 +17,8 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link rpg_modeling.Guild#getGuildinventory <em>Guildinventory</em>}</li>
  *   <li>{@link rpg_modeling.Guild#getPlayer <em>Player</em>}</li>
+ *   <li>{@link rpg_modeling.Guild#get_id <em>id</em>}</li>
+ *   <li>{@link rpg_modeling.Guild#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see rpg_modeling.Rpg_modelingPackage#getGuild()
@@ -67,5 +69,57 @@ public interface Guild extends EObject {
    * @generated
    */
   EList<Player> getPlayer();
+
+  /**
+   * Returns the value of the '<em><b>id</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>id</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>id</em>' attribute.
+   * @see #set_id(int)
+   * @see rpg_modeling.Rpg_modelingPackage#getGuild__id()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @generated
+   */
+  int get_id();
+
+  /**
+   * Sets the value of the '{@link rpg_modeling.Guild#get_id <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>id</em>' attribute.
+   * @see #get_id()
+   * @generated
+   */
+  void set_id(int value);
+
+  /**
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Name</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see rpg_modeling.Rpg_modelingPackage#getGuild_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Name"
+   * @generated
+   */
+  String getName();
+
+  /**
+   * Sets the value of the '{@link rpg_modeling.Guild#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
+  void setName(String value);
 
 } // Guild

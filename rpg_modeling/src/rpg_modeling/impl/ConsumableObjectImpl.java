@@ -55,7 +55,7 @@ public class ConsumableObjectImpl extends GameObjectImpl implements ConsumableOb
    * @generated
    * @ordered
    */
-  protected static final TypeObject NEW_ATTRIBUTE_EDEFAULT = TypeObject.HEAL;
+  protected static final TypeObject NEW_ATTRIBUTE_EDEFAULT = TypeObject.DEFAULT;
 
   /**
    * The cached value of the '{@link #getNewAttribute() <em>New Attribute</em>}' attribute.

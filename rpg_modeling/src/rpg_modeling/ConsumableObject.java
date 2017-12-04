@@ -49,6 +49,7 @@ public interface ConsumableObject extends GameObject {
 
   /**
    * Returns the value of the '<em><b>New Attribute</b></em>' attribute.
+   * The default value is <code>"DEFAULT"</code>.
    * The literals are from the enumeration {@link rpg_modeling.TypeObject}.
    * <!-- begin-user-doc -->
    * <p>
@@ -60,7 +61,7 @@ public interface ConsumableObject extends GameObject {
    * @see rpg_modeling.TypeObject
    * @see #setNewAttribute(TypeObject)
    * @see rpg_modeling.Rpg_modelingPackage#getConsumableObject_NewAttribute()
-   * @model
+   * @model default="DEFAULT"
    * @generated
    */
   TypeObject getNewAttribute();
