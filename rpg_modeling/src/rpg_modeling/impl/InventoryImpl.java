@@ -16,24 +16,24 @@ import rpg_modeling.Rpg_modelingPackage;
  *
  * @generated
  */
-public class InventoryImpl extends MinimalEObjectImpl.Container implements Inventory {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InventoryImpl() {
-		super();
-	}
+public abstract class InventoryImpl extends MinimalEObjectImpl.Container implements Inventory {
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected InventoryImpl() {
+    super();
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
-		return Rpg_modelingPackage.Literals.INVENTORY;
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  protected EClass eStaticClass() {
+    return Rpg_modelingPackage.Literals.INVENTORY;
+  }
 
 } //InventoryImpl

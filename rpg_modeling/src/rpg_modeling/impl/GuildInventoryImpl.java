@@ -15,23 +15,23 @@ import rpg_modeling.Rpg_modelingPackage;
  * @generated
  */
 public class GuildInventoryImpl extends InventoryImpl implements GuildInventory {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GuildInventoryImpl() {
-		super();
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected GuildInventoryImpl() {
+    super();
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
-		return Rpg_modelingPackage.Literals.GUILD_INVENTORY;
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  protected EClass eStaticClass() {
+    return Rpg_modelingPackage.Literals.GUILD_INVENTORY;
+  }
 
 } //GuildInventoryImpl
