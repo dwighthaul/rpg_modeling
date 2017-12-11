@@ -32,7 +32,7 @@ import rpg_modeling.Rpg_modelingPackage;
  * </p>
  * <ul>
  *   <li>{@link rpg_modeling.impl.GuildImpl#getGuildinventory <em>Guildinventory</em>}</li>
- *   <li>{@link rpg_modeling.impl.GuildImpl#getPlayer <em>Player</em>}</li>
+ *   <li>{@link rpg_modeling.impl.GuildImpl#getPlayers <em>Players</em>}</li>
  *   <li>{@link rpg_modeling.impl.GuildImpl#get_id <em>id</em>}</li>
  *   <li>{@link rpg_modeling.impl.GuildImpl#getName <em>Name</em>}</li>
  * </ul>
@@ -51,14 +51,14 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
   protected GuildInventory guildinventory;
 
   /**
-   * The cached value of the '{@link #getPlayer() <em>Player</em>}' reference list.
+   * The cached value of the '{@link #getPlayers() <em>Players</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPlayer()
+   * @see #getPlayers()
    * @generated
    * @ordered
    */
-  protected EList<Player> player;
+  protected EList<Player> players;
 
   /**
    * The default value of the '{@link #get_id() <em>id</em>}' attribute.
@@ -167,11 +167,11 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Player> getPlayer() {
-    if (player == null) {
-      player = new EObjectWithInverseResolvingEList<Player>(Player.class, this, Rpg_modelingPackage.GUILD__PLAYER, Rpg_modelingPackage.PLAYER__GUILD);
+  public EList<Player> getPlayers() {
+    if (players == null) {
+      players = new EObjectWithInverseResolvingEList<Player>(Player.class, this, Rpg_modelingPackage.GUILD__PLAYERS, Rpg_modelingPackage.PLAYER__GUILD);
     }
-    return player;
+    return players;
   }
 
   /**
@@ -225,8 +225,8 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        return ((InternalEList<InternalEObject>)(InternalEList<?>)getPlayer()).basicAdd(otherEnd, msgs);
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        return ((InternalEList<InternalEObject>)(InternalEList<?>)getPlayers()).basicAdd(otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);
   }
@@ -241,8 +241,8 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
     switch (featureID) {
       case Rpg_modelingPackage.GUILD__GUILDINVENTORY:
         return basicSetGuildinventory(null, msgs);
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        return ((InternalEList<?>)getPlayer()).basicRemove(otherEnd, msgs);
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        return ((InternalEList<?>)getPlayers()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -257,8 +257,8 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
     switch (featureID) {
       case Rpg_modelingPackage.GUILD__GUILDINVENTORY:
         return getGuildinventory();
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        return getPlayer();
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        return getPlayers();
       case Rpg_modelingPackage.GUILD__ID:
         return get_id();
       case Rpg_modelingPackage.GUILD__NAME:
@@ -279,9 +279,9 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
       case Rpg_modelingPackage.GUILD__GUILDINVENTORY:
         setGuildinventory((GuildInventory)newValue);
         return;
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        getPlayer().clear();
-        getPlayer().addAll((Collection<? extends Player>)newValue);
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        getPlayers().clear();
+        getPlayers().addAll((Collection<? extends Player>)newValue);
         return;
       case Rpg_modelingPackage.GUILD__ID:
         set_id((Integer)newValue);
@@ -304,8 +304,8 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
       case Rpg_modelingPackage.GUILD__GUILDINVENTORY:
         setGuildinventory((GuildInventory)null);
         return;
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        getPlayer().clear();
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        getPlayers().clear();
         return;
       case Rpg_modelingPackage.GUILD__ID:
         set_id(_ID_EDEFAULT);
@@ -327,8 +327,8 @@ public class GuildImpl extends MinimalEObjectImpl.Container implements Guild {
     switch (featureID) {
       case Rpg_modelingPackage.GUILD__GUILDINVENTORY:
         return guildinventory != null;
-      case Rpg_modelingPackage.GUILD__PLAYER:
-        return player != null && !player.isEmpty();
+      case Rpg_modelingPackage.GUILD__PLAYERS:
+        return players != null && !players.isEmpty();
       case Rpg_modelingPackage.GUILD__ID:
         return _id != _ID_EDEFAULT;
       case Rpg_modelingPackage.GUILD__NAME:

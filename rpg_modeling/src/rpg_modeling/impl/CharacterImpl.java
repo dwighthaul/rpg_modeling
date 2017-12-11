@@ -23,13 +23,14 @@ import rpg_modeling.Rpg_modelingPackage;
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getName <em>Name</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getHp <em>Hp</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getMp <em>Mp</em>}</li>
- *   <li>{@link rpg_modeling.impl.CharacterImpl#getStrenght <em>Strenght</em>}</li>
+ *   <li>{@link rpg_modeling.impl.CharacterImpl#getStrength <em>Strength</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getConstitution <em>Constitution</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getDexterity <em>Dexterity</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getIntelligence <em>Intelligence</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getWisdom <em>Wisdom</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getLuck <em>Luck</em>}</li>
  *   <li>{@link rpg_modeling.impl.CharacterImpl#getEquipment <em>Equipment</em>}</li>
+ *   <li>{@link rpg_modeling.impl.CharacterImpl#get_id <em>id</em>}</li>
  * </ul>
  *
  * @generated
@@ -90,23 +91,23 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
    */
   protected int mp = MP_EDEFAULT;
   /**
-   * The default value of the '{@link #getStrenght() <em>Strenght</em>}' attribute.
+   * The default value of the '{@link #getStrength() <em>Strength</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getStrenght()
+   * @see #getStrength()
    * @generated
    * @ordered
    */
-  protected static final int STRENGHT_EDEFAULT = 0;
+  protected static final int STRENGTH_EDEFAULT = 0;
   /**
-   * The cached value of the '{@link #getStrenght() <em>Strenght</em>}' attribute.
+   * The cached value of the '{@link #getStrength() <em>Strength</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getStrenght()
+   * @see #getStrength()
    * @generated
    * @ordered
    */
-  protected int strenght = STRENGHT_EDEFAULT;
+  protected int strength = STRENGTH_EDEFAULT;
   /**
    * The default value of the '{@link #getConstitution() <em>Constitution</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -208,6 +209,25 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
   protected Equipment equipment;
 
   /**
+   * The default value of the '{@link #get_id() <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #get_id()
+   * @generated
+   * @ordered
+   */
+  protected static final int _ID_EDEFAULT = 0;
+  /**
+   * The cached value of the '{@link #get_id() <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #get_id()
+   * @generated
+   * @ordered
+   */
+  protected int _id = _ID_EDEFAULT;
+
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -294,8 +314,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public int getStrenght() {
-    return strenght;
+  public int getStrength() {
+    return strength;
   }
 
   /**
@@ -303,11 +323,11 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setStrenght(int newStrenght) {
-    int oldStrenght = strenght;
-    strenght = newStrenght;
+  public void setStrength(int newStrength) {
+    int oldStrength = strength;
+    strength = newStrength;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, Rpg_modelingPackage.CHARACTER__STRENGHT, oldStrenght, strenght));
+      eNotify(new ENotificationImpl(this, Notification.SET, Rpg_modelingPackage.CHARACTER__STRENGTH, oldStrength, strength));
   }
 
   /**
@@ -463,6 +483,27 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
+  public int get_id() {
+    return _id;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void set_id(int new_id) {
+    int old_id = _id;
+    _id = new_id;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, Rpg_modelingPackage.CHARACTER__ID, old_id, _id));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
@@ -486,8 +527,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
         return getHp();
       case Rpg_modelingPackage.CHARACTER__MP:
         return getMp();
-      case Rpg_modelingPackage.CHARACTER__STRENGHT:
-        return getStrenght();
+      case Rpg_modelingPackage.CHARACTER__STRENGTH:
+        return getStrength();
       case Rpg_modelingPackage.CHARACTER__CONSTITUTION:
         return getConstitution();
       case Rpg_modelingPackage.CHARACTER__DEXTERITY:
@@ -500,6 +541,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
         return getLuck();
       case Rpg_modelingPackage.CHARACTER__EQUIPMENT:
         return getEquipment();
+      case Rpg_modelingPackage.CHARACTER__ID:
+        return get_id();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -522,8 +565,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
       case Rpg_modelingPackage.CHARACTER__MP:
         setMp((Integer)newValue);
         return;
-      case Rpg_modelingPackage.CHARACTER__STRENGHT:
-        setStrenght((Integer)newValue);
+      case Rpg_modelingPackage.CHARACTER__STRENGTH:
+        setStrength((Integer)newValue);
         return;
       case Rpg_modelingPackage.CHARACTER__CONSTITUTION:
         setConstitution((Integer)newValue);
@@ -542,6 +585,9 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
         return;
       case Rpg_modelingPackage.CHARACTER__EQUIPMENT:
         setEquipment((Equipment)newValue);
+        return;
+      case Rpg_modelingPackage.CHARACTER__ID:
+        set_id((Integer)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -564,8 +610,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
       case Rpg_modelingPackage.CHARACTER__MP:
         setMp(MP_EDEFAULT);
         return;
-      case Rpg_modelingPackage.CHARACTER__STRENGHT:
-        setStrenght(STRENGHT_EDEFAULT);
+      case Rpg_modelingPackage.CHARACTER__STRENGTH:
+        setStrength(STRENGTH_EDEFAULT);
         return;
       case Rpg_modelingPackage.CHARACTER__CONSTITUTION:
         setConstitution(CONSTITUTION_EDEFAULT);
@@ -585,6 +631,9 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
       case Rpg_modelingPackage.CHARACTER__EQUIPMENT:
         setEquipment((Equipment)null);
         return;
+      case Rpg_modelingPackage.CHARACTER__ID:
+        set_id(_ID_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -603,8 +652,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
         return hp != HP_EDEFAULT;
       case Rpg_modelingPackage.CHARACTER__MP:
         return mp != MP_EDEFAULT;
-      case Rpg_modelingPackage.CHARACTER__STRENGHT:
-        return strenght != STRENGHT_EDEFAULT;
+      case Rpg_modelingPackage.CHARACTER__STRENGTH:
+        return strength != STRENGTH_EDEFAULT;
       case Rpg_modelingPackage.CHARACTER__CONSTITUTION:
         return constitution != CONSTITUTION_EDEFAULT;
       case Rpg_modelingPackage.CHARACTER__DEXTERITY:
@@ -617,6 +666,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
         return luck != LUCK_EDEFAULT;
       case Rpg_modelingPackage.CHARACTER__EQUIPMENT:
         return equipment != null;
+      case Rpg_modelingPackage.CHARACTER__ID:
+        return _id != _ID_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -637,8 +688,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
     result.append(hp);
     result.append(", mp: ");
     result.append(mp);
-    result.append(", strenght: ");
-    result.append(strenght);
+    result.append(", strength: ");
+    result.append(strength);
     result.append(", constitution: ");
     result.append(constitution);
     result.append(", dexterity: ");
@@ -649,6 +700,8 @@ public abstract class CharacterImpl extends MinimalEObjectImpl.Container impleme
     result.append(wisdom);
     result.append(", luck: ");
     result.append(luck);
+    result.append(", _id: ");
+    result.append(_id);
     result.append(')');
     return result.toString();
   }

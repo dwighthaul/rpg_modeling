@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link rpg_modeling.Faction#getGuild <em>Guild</em>}</li>
+ *   <li>{@link rpg_modeling.Faction#getGuilds <em>Guilds</em>}</li>
  *   <li>{@link rpg_modeling.Faction#get_id <em>id</em>}</li>
  *   <li>{@link rpg_modeling.Faction#getName <em>Name</em>}</li>
  * </ul>
@@ -26,20 +26,20 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Faction extends EObject {
   /**
-   * Returns the value of the '<em><b>Guild</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Guilds</b></em>' containment reference list.
    * The list contents are of type {@link rpg_modeling.Guild}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Guild</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Guilds</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Guild</em>' containment reference list.
-   * @see rpg_modeling.Rpg_modelingPackage#getFaction_Guild()
+   * @return the value of the '<em>Guilds</em>' containment reference list.
+   * @see rpg_modeling.Rpg_modelingPackage#getFaction_Guilds()
    * @model containment="true"
    * @generated
    */
-  EList<Guild> getGuild();
+  EList<Guild> getGuilds();
 
   /**
    * Returns the value of the '<em><b>id</b></em>' attribute.
@@ -52,7 +52,7 @@ public interface Faction extends EObject {
    * @return the value of the '<em>id</em>' attribute.
    * @see #set_id(int)
    * @see rpg_modeling.Rpg_modelingPackage#getFaction__id()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model id="true"
    * @generated
    */
   int get_id();
@@ -78,7 +78,7 @@ public interface Faction extends EObject {
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
    * @see rpg_modeling.Rpg_modelingPackage#getFaction_Name()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Name"
+   * @model
    * @generated
    */
   String getName();

@@ -123,6 +123,10 @@
               <styles xmi:type="notation:FontStyle" xmi:id="_EOhIMdkNEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_EOhIMtkNEeeLyeLz_SyV_Q"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_BDcdoN6PEee5kZcWhN1lcw" type="3010" element="_BCnXMN6PEee5kZcWhN1lcw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_BDcdod6PEee5kZcWhN1lcw" fontColor="2697711" fontName="Cantarell" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_BDcdot6PEee5kZcWhN1lcw"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_VyFkks30Eee82vClkWtIFw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_VyFkk830Eee82vClkWtIFw"/>
           </children>
@@ -211,38 +215,6 @@
         <children xmi:type="notation:Node" xmi:id="_-0Wj4M37Eee82vClkWtIFw" type="2003" element="_-0P2MM37Eee82vClkWtIFw">
           <children xmi:type="notation:Node" xmi:id="_-0Wj4837Eee82vClkWtIFw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_-0Wj5M37Eee82vClkWtIFw" type="7004">
-            <children xmi:type="notation:Node" xmi:id="_WpreMNN2EeefLbXq0FNzBQ" type="3010" element="_WpFBQNN2EeefLbXq0FNzBQ">
-              <styles xmi:type="notation:FontStyle" xmi:id="_WpsFQNN2EeefLbXq0FNzBQ" fontColor="2697711" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_WpsFQdN2EeefLbXq0FNzBQ"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_wQWWYNN2EeefLbXq0FNzBQ" type="3010" element="_wQKJINN2EeefLbXq0FNzBQ">
-              <styles xmi:type="notation:FontStyle" xmi:id="_wQWWYdN2EeefLbXq0FNzBQ" fontColor="2697711" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_wQWWYtN2EeefLbXq0FNzBQ"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_Lnum4NkMEeeLyeLz_SyV_Q" type="3010" element="_LnZ2wNkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_Lnum4dkMEeeLyeLz_SyV_Q" fontColor="2697711" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Lnum4tkMEeeLyeLz_SyV_Q"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_Rv9JYNkMEeeLyeLz_SyV_Q" type="3010" element="_RveBMNkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_Rv9JYdkMEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Rv9JYtkMEeeLyeLz_SyV_Q"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_THlDoNkMEeeLyeLz_SyV_Q" type="3010" element="_THF7cNkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_THlDodkMEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_THlDotkMEeeLyeLz_SyV_Q"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_WGMJ0NkMEeeLyeLz_SyV_Q" type="3010" element="_WFmT8NkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_WGMJ0dkMEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_WGMJ0tkMEeeLyeLz_SyV_Q"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_ahLucNkMEeeLyeLz_SyV_Q" type="3010" element="_ag5akNkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_ahLucdkMEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ahLuctkMEeeLyeLz_SyV_Q"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_cEFEkNkMEeeLyeLz_SyV_Q" type="3010" element="_cDqN0NkMEeeLyeLz_SyV_Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_cEFEkdkMEeeLyeLz_SyV_Q" fontName="Cantarell" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_cEFEktkMEeeLyeLz_SyV_Q"/>
-            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_-0Wj5c37Eee82vClkWtIFw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_-0Wj5s37Eee82vClkWtIFw"/>
           </children>
@@ -817,7 +789,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_0xc9QNkMEeeLyeLz_SyV_Q" name="_id : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_0xc9QNkMEeeLyeLz_SyV_Q" name="_id : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Guild/_id"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Guild/_id"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_3Um2gNkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
@@ -825,7 +797,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_36xeoNkMEeeLyeLz_SyV_Q" name="name : Name" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_36xeoNkMEeeLyeLz_SyV_Q" name="name : EString" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Guild/name"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Guild/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_7oE20NkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
@@ -844,7 +816,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_CzYcYNkMEeeLyeLz_SyV_Q" name="_id : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_CzYcYNkMEeeLyeLz_SyV_Q" name="_id : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Faction/_id"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Faction/_id"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Fyi8MNkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
@@ -852,7 +824,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HxQroNkMEeeLyeLz_SyV_Q" name="name : Name" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HxQroNkMEeeLyeLz_SyV_Q" name="name : EString" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Faction/name"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Faction/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_J9yNkNkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
@@ -886,7 +858,7 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_vtCDoM30Eee82vClkWtIFw" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_H8624N6PEee5kZcWhN1lcw" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
         <labelFormat>italic</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
@@ -915,9 +887,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-4tNQNN-Eeefw6tgEjoAUw" name="strenght : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/strenght"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/strenght"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-4tNQNN-Eeefw6tgEjoAUw" name="strength : EInt" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/strength"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/strength"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_-4t0UNN-Eeefw6tgEjoAUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
@@ -959,6 +931,14 @@
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/luck"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/luck"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_JspQ8dN_Eeefw6tgEjoAUw" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_BCnXMN6PEee5kZcWhN1lcw" name="_id : EInt" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/_id"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Character/_id"/>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_H89TIN6PEee5kZcWhN1lcw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
@@ -1051,9 +1031,9 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_NIWKwM34Eee82vClkWtIFw" name="[0..*] guild" sourceNode="_SjRcAM3wEee82vClkWtIFw" targetNode="_PttkIM3wEee82vClkWtIFw">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Faction/guild"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Faction/guild"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_NIWKwM34Eee82vClkWtIFw" name="[0..*] guilds" sourceNode="_SjRcAM3wEee82vClkWtIFw" targetNode="_PttkIM3wEee82vClkWtIFw">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Faction/guilds"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Faction/guilds"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_NIWx0M34Eee82vClkWtIFw" description="_9A9CsM3yEee82vClkWtIFw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_NIWx0c34Eee82vClkWtIFw" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -1144,70 +1124,6 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_WpFBQNN2EeefLbXq0FNzBQ" name="head : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/head"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/head"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_rvYsoNN2EeefLbXq0FNzBQ" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_wQKJINN2EeefLbXq0FNzBQ" name="arm : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/arm"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/arm"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_yTf54NN2EeefLbXq0FNzBQ" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LnZ2wNkMEeeLyeLz_SyV_Q" name="chest : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/chest"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/chest"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_QfNTMNkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_RveBMNkMEeeLyeLz_SyV_Q" name="leg : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/leg"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/leg"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_RveBMdkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_THF7cNkMEeeLyeLz_SyV_Q" name="right_hand : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/right_hand"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/right_hand"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_THF7cdkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_WFmT8NkMEeeLyeLz_SyV_Q" name="left_hand : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/left_hand"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/left_hand"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_WFm7ANkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ag5akNkMEeeLyeLz_SyV_Q" name="hand : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/hand"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/hand"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_ag6BoNkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_cDqN0NkMEeeLyeLz_SyV_Q" name="foot : Int" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/foot"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//PlayerArmor/foot"/>
-        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_cDq04NkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ENDt8M38Eee82vClkWtIFw" name="[1..1] inventory" sourceNode="_2H2t0M37Eee82vClkWtIFw" targetNode="_9ZhkoM37Eee82vClkWtIFw">
       <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Equipment/inventory"/>
@@ -1254,7 +1170,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_GKDtQNN6Eee7OscMAFb-2w" name="_id : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_GKDtQNN6Eee7OscMAFb-2w" name="_id : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/_id"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/_id"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_KSkawNN6Eee7OscMAFb-2w" labelAlignment="LEFT">
@@ -1262,7 +1178,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Li4MENN6Eee7OscMAFb-2w" name="name : String" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Li4MENN6Eee7OscMAFb-2w" name="name : EString" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/name"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_OIotYNN6Eee7OscMAFb-2w" labelAlignment="LEFT">
@@ -1270,7 +1186,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Rq1zYNN7Eee7OscMAFb-2w" name="price : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Rq1zYNN7Eee7OscMAFb-2w" name="price : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/price"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//GameObject/price"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_TXT8QNN7Eee7OscMAFb-2w" labelAlignment="LEFT">
@@ -1383,7 +1299,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_8alh0NN6Eee7OscMAFb-2w" name="_idQuest : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_8alh0NN6Eee7OscMAFb-2w" name="_idQuest : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//QuestObject/_idQuest"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//QuestObject/_idQuest"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_B4t-cNN7Eee7OscMAFb-2w" labelAlignment="LEFT">
@@ -1402,7 +1318,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_IotEgNN7Eee7OscMAFb-2w" name="timeEffect : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_IotEgNN7Eee7OscMAFb-2w" name="timeEffect : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//ConsumableObject/timeEffect"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//ConsumableObject/timeEffect"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_LilbsNN7Eee7OscMAFb-2w" labelAlignment="LEFT">
@@ -1488,7 +1404,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_kKRIkNkMEeeLyeLz_SyV_Q" name="qteMoney : Int" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_kKRIkNkMEeeLyeLz_SyV_Q" name="qteMoney : EInt" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Inventory/qteMoney"/>
         <semanticElements xmi:type="ecore:EAttribute" href="rpg_modeling.ecore#//Inventory/qteMoney"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_n7k3ANkMEeeLyeLz_SyV_Q" labelAlignment="LEFT">
@@ -1521,10 +1437,10 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_suZbYM4MEeelnaXBZkk2cg" sourceNode="_PttkIM3wEee82vClkWtIFw" targetNode="_Y7-qgM3wEee82vClkWtIFw" beginLabel="[0..1] guild" endLabel="[0..*] player">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Guild/player"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_suZbYM4MEeelnaXBZkk2cg" sourceNode="_PttkIM3wEee82vClkWtIFw" targetNode="_Y7-qgM3wEee82vClkWtIFw" beginLabel="[0..1] guild" endLabel="[0..*] players">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Guild/players"/>
       <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Player/guild"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Guild/player"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Guild/players"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_suaCcM4MEeelnaXBZkk2cg" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_suaCcc4MEeelnaXBZkk2cg" showIcon="false"/>
@@ -1532,9 +1448,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_82hCINN1EeefLbXq0FNzBQ" name="[0..8] equipmentobject" sourceNode="_-0P2MM37Eee82vClkWtIFw" targetNode="_6reYEM39Eee82vClkWtIFw">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//PlayerArmor/equipmentobject"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//PlayerArmor/equipmentobject"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_82hCINN1EeefLbXq0FNzBQ" name="[0..8] equipmentobjects" sourceNode="_-0P2MM37Eee82vClkWtIFw" targetNode="_6reYEM39Eee82vClkWtIFw">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//PlayerArmor/equipmentobjects"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//PlayerArmor/equipmentobjects"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_82iQQNN1EeefLbXq0FNzBQ" description="_9A9CsM3yEee82vClkWtIFw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_82iQQdN1EeefLbXq0FNzBQ" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -1679,9 +1595,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_28KpsNj-EeeLyeLz_SyV_Q" name="[0..*] faction" sourceNode="_y9sB8Nj-EeeLyeLz_SyV_Q" targetNode="_SjRcAM3wEee82vClkWtIFw">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/faction"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/faction"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_28KpsNj-EeeLyeLz_SyV_Q" name="[0..*] factions" sourceNode="_y9sB8Nj-EeeLyeLz_SyV_Q" targetNode="_SjRcAM3wEee82vClkWtIFw">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/factions"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/factions"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_28Me4Nj-EeeLyeLz_SyV_Q" description="_9A9CsM3yEee82vClkWtIFw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_28Me4dj-EeeLyeLz_SyV_Q" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -1692,9 +1608,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_50lBQNj-EeeLyeLz_SyV_Q" name="[0..*] character" sourceNode="_y9sB8Nj-EeeLyeLz_SyV_Q" targetNode="_Vx4wQM30Eee82vClkWtIFw">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/character"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/character"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_50lBQNj-EeeLyeLz_SyV_Q" name="[0..*] characters" sourceNode="_y9sB8Nj-EeeLyeLz_SyV_Q" targetNode="_Vx4wQM30Eee82vClkWtIFw">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/characters"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//GameEngine/characters"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_50loUNj-EeeLyeLz_SyV_Q" description="_9A9CsM3yEee82vClkWtIFw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_50loUdj-EeeLyeLz_SyV_Q" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -1716,9 +1632,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_w0upANkMEeeLyeLz_SyV_Q" name="[0..*] gameobject" sourceNode="_R7I0QM4MEeelnaXBZkk2cg" targetNode="_2lG_oM39Eee82vClkWtIFw">
-      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Inventory/gameobject"/>
-      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Inventory/gameobject"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_w0upANkMEeeLyeLz_SyV_Q" name="[0..*] gameobjects" sourceNode="_R7I0QM4MEeelnaXBZkk2cg" targetNode="_2lG_oM39Eee82vClkWtIFw">
+      <target xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Inventory/gameobjects"/>
+      <semanticElements xmi:type="ecore:EReference" href="rpg_modeling.ecore#//Inventory/gameobjects"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_w0vQENkMEeeLyeLz_SyV_Q" description="_9A9CsM3yEee82vClkWtIFw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_w0vQEdkMEeeLyeLz_SyV_Q" showIcon="false">
           <customFeatures>labelSize</customFeatures>

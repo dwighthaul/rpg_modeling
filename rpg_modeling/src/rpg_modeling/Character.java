@@ -16,13 +16,14 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link rpg_modeling.Character#getName <em>Name</em>}</li>
  *   <li>{@link rpg_modeling.Character#getHp <em>Hp</em>}</li>
  *   <li>{@link rpg_modeling.Character#getMp <em>Mp</em>}</li>
- *   <li>{@link rpg_modeling.Character#getStrenght <em>Strenght</em>}</li>
+ *   <li>{@link rpg_modeling.Character#getStrength <em>Strength</em>}</li>
  *   <li>{@link rpg_modeling.Character#getConstitution <em>Constitution</em>}</li>
  *   <li>{@link rpg_modeling.Character#getDexterity <em>Dexterity</em>}</li>
  *   <li>{@link rpg_modeling.Character#getIntelligence <em>Intelligence</em>}</li>
  *   <li>{@link rpg_modeling.Character#getWisdom <em>Wisdom</em>}</li>
  *   <li>{@link rpg_modeling.Character#getLuck <em>Luck</em>}</li>
  *   <li>{@link rpg_modeling.Character#getEquipment <em>Equipment</em>}</li>
+ *   <li>{@link rpg_modeling.Character#get_id <em>id</em>}</li>
  * </ul>
  *
  * @see rpg_modeling.Rpg_modelingPackage#getCharacter()
@@ -109,30 +110,30 @@ public interface Character extends EObject {
   void setMp(int value);
 
   /**
-   * Returns the value of the '<em><b>Strenght</b></em>' attribute.
+   * Returns the value of the '<em><b>Strength</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Strenght</em>' attribute isn't clear,
+   * If the meaning of the '<em>Strength</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Strenght</em>' attribute.
-   * @see #setStrenght(int)
-   * @see rpg_modeling.Rpg_modelingPackage#getCharacter_Strenght()
+   * @return the value of the '<em>Strength</em>' attribute.
+   * @see #setStrength(int)
+   * @see rpg_modeling.Rpg_modelingPackage#getCharacter_Strength()
    * @model
    * @generated
    */
-  int getStrenght();
+  int getStrength();
 
   /**
-   * Sets the value of the '{@link rpg_modeling.Character#getStrenght <em>Strenght</em>}' attribute.
+   * Sets the value of the '{@link rpg_modeling.Character#getStrength <em>Strength</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Strenght</em>' attribute.
-   * @see #getStrenght()
+   * @param value the new value of the '<em>Strength</em>' attribute.
+   * @see #getStrength()
    * @generated
    */
-  void setStrenght(int value);
+  void setStrength(int value);
 
   /**
    * Returns the value of the '<em><b>Constitution</b></em>' attribute.
@@ -289,5 +290,31 @@ public interface Character extends EObject {
    * @generated
    */
   void setEquipment(Equipment value);
+
+  /**
+   * Returns the value of the '<em><b>id</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>id</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>id</em>' attribute.
+   * @see #set_id(int)
+   * @see rpg_modeling.Rpg_modelingPackage#getCharacter__id()
+   * @model id="true"
+   * @generated
+   */
+  int get_id();
+
+  /**
+   * Sets the value of the '{@link rpg_modeling.Character#get_id <em>id</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>id</em>' attribute.
+   * @see #get_id()
+   * @generated
+   */
+  void set_id(int value);
 
 } // Character

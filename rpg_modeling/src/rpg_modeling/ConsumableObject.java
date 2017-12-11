@@ -32,7 +32,7 @@ public interface ConsumableObject extends GameObject {
    * @return the value of the '<em>Time Effect</em>' attribute.
    * @see #setTimeEffect(int)
    * @see rpg_modeling.Rpg_modelingPackage#getConsumableObject_TimeEffect()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model
    * @generated
    */
   int getTimeEffect();

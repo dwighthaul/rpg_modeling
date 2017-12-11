@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link rpg_modeling.Guild#getGuildinventory <em>Guildinventory</em>}</li>
- *   <li>{@link rpg_modeling.Guild#getPlayer <em>Player</em>}</li>
+ *   <li>{@link rpg_modeling.Guild#getPlayers <em>Players</em>}</li>
  *   <li>{@link rpg_modeling.Guild#get_id <em>id</em>}</li>
  *   <li>{@link rpg_modeling.Guild#getName <em>Name</em>}</li>
  * </ul>
@@ -53,22 +53,22 @@ public interface Guild extends EObject {
   void setGuildinventory(GuildInventory value);
 
   /**
-   * Returns the value of the '<em><b>Player</b></em>' reference list.
+   * Returns the value of the '<em><b>Players</b></em>' reference list.
    * The list contents are of type {@link rpg_modeling.Player}.
    * It is bidirectional and its opposite is '{@link rpg_modeling.Player#getGuild <em>Guild</em>}'.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Player</em>' reference list isn't clear,
+   * If the meaning of the '<em>Players</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Player</em>' reference list.
-   * @see rpg_modeling.Rpg_modelingPackage#getGuild_Player()
+   * @return the value of the '<em>Players</em>' reference list.
+   * @see rpg_modeling.Rpg_modelingPackage#getGuild_Players()
    * @see rpg_modeling.Player#getGuild
    * @model opposite="guild"
    * @generated
    */
-  EList<Player> getPlayer();
+  EList<Player> getPlayers();
 
   /**
    * Returns the value of the '<em><b>id</b></em>' attribute.
@@ -81,7 +81,7 @@ public interface Guild extends EObject {
    * @return the value of the '<em>id</em>' attribute.
    * @see #set_id(int)
    * @see rpg_modeling.Rpg_modelingPackage#getGuild__id()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model id="true"
    * @generated
    */
   int get_id();
@@ -107,7 +107,7 @@ public interface Guild extends EObject {
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
    * @see rpg_modeling.Rpg_modelingPackage#getGuild_Name()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Name"
+   * @model
    * @generated
    */
   String getName();

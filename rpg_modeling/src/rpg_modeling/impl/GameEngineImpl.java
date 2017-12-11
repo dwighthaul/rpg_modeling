@@ -28,32 +28,32 @@ import rpg_modeling.Rpg_modelingPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link rpg_modeling.impl.GameEngineImpl#getFaction <em>Faction</em>}</li>
- *   <li>{@link rpg_modeling.impl.GameEngineImpl#getCharacter <em>Character</em>}</li>
+ *   <li>{@link rpg_modeling.impl.GameEngineImpl#getFactions <em>Factions</em>}</li>
+ *   <li>{@link rpg_modeling.impl.GameEngineImpl#getCharacters <em>Characters</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class GameEngineImpl extends MinimalEObjectImpl.Container implements GameEngine {
   /**
-   * The cached value of the '{@link #getFaction() <em>Faction</em>}' containment reference list.
+   * The cached value of the '{@link #getFactions() <em>Factions</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFaction()
+   * @see #getFactions()
    * @generated
    * @ordered
    */
-  protected EList<Faction> faction;
+  protected EList<Faction> factions;
 
   /**
-   * The cached value of the '{@link #getCharacter() <em>Character</em>}' containment reference list.
+   * The cached value of the '{@link #getCharacters() <em>Characters</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getCharacter()
+   * @see #getCharacters()
    * @generated
    * @ordered
    */
-  protected EList<rpg_modeling.Character> character;
+  protected EList<rpg_modeling.Character> characters;
 
   /**
    * <!-- begin-user-doc -->
@@ -79,11 +79,11 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Faction> getFaction() {
-    if (faction == null) {
-      faction = new EObjectContainmentEList<Faction>(Faction.class, this, Rpg_modelingPackage.GAME_ENGINE__FACTION);
+  public EList<Faction> getFactions() {
+    if (factions == null) {
+      factions = new EObjectContainmentEList<Faction>(Faction.class, this, Rpg_modelingPackage.GAME_ENGINE__FACTIONS);
     }
-    return faction;
+    return factions;
   }
 
   /**
@@ -91,11 +91,11 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<rpg_modeling.Character> getCharacter() {
-    if (character == null) {
-      character = new EObjectContainmentEList<rpg_modeling.Character>(rpg_modeling.Character.class, this, Rpg_modelingPackage.GAME_ENGINE__CHARACTER);
+  public EList<rpg_modeling.Character> getCharacters() {
+    if (characters == null) {
+      characters = new EObjectContainmentEList<rpg_modeling.Character>(rpg_modeling.Character.class, this, Rpg_modelingPackage.GAME_ENGINE__CHARACTERS);
     }
-    return character;
+    return characters;
   }
 
   /**
@@ -106,10 +106,10 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case Rpg_modelingPackage.GAME_ENGINE__FACTION:
-        return ((InternalEList<?>)getFaction()).basicRemove(otherEnd, msgs);
-      case Rpg_modelingPackage.GAME_ENGINE__CHARACTER:
-        return ((InternalEList<?>)getCharacter()).basicRemove(otherEnd, msgs);
+      case Rpg_modelingPackage.GAME_ENGINE__FACTIONS:
+        return ((InternalEList<?>)getFactions()).basicRemove(otherEnd, msgs);
+      case Rpg_modelingPackage.GAME_ENGINE__CHARACTERS:
+        return ((InternalEList<?>)getCharacters()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -122,10 +122,10 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case Rpg_modelingPackage.GAME_ENGINE__FACTION:
-        return getFaction();
-      case Rpg_modelingPackage.GAME_ENGINE__CHARACTER:
-        return getCharacter();
+      case Rpg_modelingPackage.GAME_ENGINE__FACTIONS:
+        return getFactions();
+      case Rpg_modelingPackage.GAME_ENGINE__CHARACTERS:
+        return getCharacters();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -139,13 +139,13 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case Rpg_modelingPackage.GAME_ENGINE__FACTION:
-        getFaction().clear();
-        getFaction().addAll((Collection<? extends Faction>)newValue);
+      case Rpg_modelingPackage.GAME_ENGINE__FACTIONS:
+        getFactions().clear();
+        getFactions().addAll((Collection<? extends Faction>)newValue);
         return;
-      case Rpg_modelingPackage.GAME_ENGINE__CHARACTER:
-        getCharacter().clear();
-        getCharacter().addAll((Collection<? extends rpg_modeling.Character>)newValue);
+      case Rpg_modelingPackage.GAME_ENGINE__CHARACTERS:
+        getCharacters().clear();
+        getCharacters().addAll((Collection<? extends rpg_modeling.Character>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -159,11 +159,11 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case Rpg_modelingPackage.GAME_ENGINE__FACTION:
-        getFaction().clear();
+      case Rpg_modelingPackage.GAME_ENGINE__FACTIONS:
+        getFactions().clear();
         return;
-      case Rpg_modelingPackage.GAME_ENGINE__CHARACTER:
-        getCharacter().clear();
+      case Rpg_modelingPackage.GAME_ENGINE__CHARACTERS:
+        getCharacters().clear();
         return;
     }
     super.eUnset(featureID);
@@ -177,10 +177,10 @@ public class GameEngineImpl extends MinimalEObjectImpl.Container implements Game
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case Rpg_modelingPackage.GAME_ENGINE__FACTION:
-        return faction != null && !faction.isEmpty();
-      case Rpg_modelingPackage.GAME_ENGINE__CHARACTER:
-        return character != null && !character.isEmpty();
+      case Rpg_modelingPackage.GAME_ENGINE__FACTIONS:
+        return factions != null && !factions.isEmpty();
+      case Rpg_modelingPackage.GAME_ENGINE__CHARACTERS:
+        return characters != null && !characters.isEmpty();
     }
     return super.eIsSet(featureID);
   }

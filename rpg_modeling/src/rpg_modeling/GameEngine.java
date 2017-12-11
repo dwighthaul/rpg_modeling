@@ -15,8 +15,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link rpg_modeling.GameEngine#getFaction <em>Faction</em>}</li>
- *   <li>{@link rpg_modeling.GameEngine#getCharacter <em>Character</em>}</li>
+ *   <li>{@link rpg_modeling.GameEngine#getFactions <em>Factions</em>}</li>
+ *   <li>{@link rpg_modeling.GameEngine#getCharacters <em>Characters</em>}</li>
  * </ul>
  *
  * @see rpg_modeling.Rpg_modelingPackage#getGameEngine()
@@ -25,35 +25,35 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface GameEngine extends EObject {
   /**
-   * Returns the value of the '<em><b>Faction</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Factions</b></em>' containment reference list.
    * The list contents are of type {@link rpg_modeling.Faction}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Faction</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Factions</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Faction</em>' containment reference list.
-   * @see rpg_modeling.Rpg_modelingPackage#getGameEngine_Faction()
+   * @return the value of the '<em>Factions</em>' containment reference list.
+   * @see rpg_modeling.Rpg_modelingPackage#getGameEngine_Factions()
    * @model containment="true"
    * @generated
    */
-  EList<Faction> getFaction();
+  EList<Faction> getFactions();
 
   /**
-   * Returns the value of the '<em><b>Character</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Characters</b></em>' containment reference list.
    * The list contents are of type {@link rpg_modeling.Character}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Character</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Characters</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Character</em>' containment reference list.
-   * @see rpg_modeling.Rpg_modelingPackage#getGameEngine_Character()
+   * @return the value of the '<em>Characters</em>' containment reference list.
+   * @see rpg_modeling.Rpg_modelingPackage#getGameEngine_Characters()
    * @model containment="true"
    * @generated
    */
-  EList<rpg_modeling.Character> getCharacter();
+  EList<rpg_modeling.Character> getCharacters();
 
 } // GameEngine

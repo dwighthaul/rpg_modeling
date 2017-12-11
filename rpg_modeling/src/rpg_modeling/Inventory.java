@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link rpg_modeling.Inventory#getQteMoney <em>Qte Money</em>}</li>
- *   <li>{@link rpg_modeling.Inventory#getGameobject <em>Gameobject</em>}</li>
+ *   <li>{@link rpg_modeling.Inventory#getGameobjects <em>Gameobjects</em>}</li>
  * </ul>
  *
  * @see rpg_modeling.Rpg_modelingPackage#getInventory()
@@ -35,7 +35,7 @@ public interface Inventory extends EObject {
    * @return the value of the '<em>Qte Money</em>' attribute.
    * @see #setQteMoney(int)
    * @see rpg_modeling.Rpg_modelingPackage#getInventory_QteMoney()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model
    * @generated
    */
   int getQteMoney();
@@ -51,18 +51,18 @@ public interface Inventory extends EObject {
   void setQteMoney(int value);
 
   /**
-   * Returns the value of the '<em><b>Gameobject</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Gameobjects</b></em>' containment reference list.
    * The list contents are of type {@link rpg_modeling.GameObject}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Gameobject</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Gameobjects</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Gameobject</em>' containment reference list.
-   * @see rpg_modeling.Rpg_modelingPackage#getInventory_Gameobject()
+   * @return the value of the '<em>Gameobjects</em>' containment reference list.
+   * @see rpg_modeling.Rpg_modelingPackage#getInventory_Gameobjects()
    * @model containment="true"
    * @generated
    */
-  EList<GameObject> getGameobject();
+  EList<GameObject> getGameobjects();
 } // Inventory

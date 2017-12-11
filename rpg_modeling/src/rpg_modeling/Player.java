@@ -23,7 +23,7 @@ package rpg_modeling;
 public interface Player extends rpg_modeling.Character {
   /**
    * Returns the value of the '<em><b>Guild</b></em>' reference.
-   * It is bidirectional and its opposite is '{@link rpg_modeling.Guild#getPlayer <em>Player</em>}'.
+   * It is bidirectional and its opposite is '{@link rpg_modeling.Guild#getPlayers <em>Players</em>}'.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Guild</em>' reference isn't clear,
@@ -33,8 +33,8 @@ public interface Player extends rpg_modeling.Character {
    * @return the value of the '<em>Guild</em>' reference.
    * @see #setGuild(Guild)
    * @see rpg_modeling.Rpg_modelingPackage#getPlayer_Guild()
-   * @see rpg_modeling.Guild#getPlayer
-   * @model opposite="player"
+   * @see rpg_modeling.Guild#getPlayers
+   * @model opposite="players"
    * @generated
    */
   Guild getGuild();

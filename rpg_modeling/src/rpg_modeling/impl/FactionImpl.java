@@ -30,7 +30,7 @@ import rpg_modeling.Rpg_modelingPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link rpg_modeling.impl.FactionImpl#getGuild <em>Guild</em>}</li>
+ *   <li>{@link rpg_modeling.impl.FactionImpl#getGuilds <em>Guilds</em>}</li>
  *   <li>{@link rpg_modeling.impl.FactionImpl#get_id <em>id</em>}</li>
  *   <li>{@link rpg_modeling.impl.FactionImpl#getName <em>Name</em>}</li>
  * </ul>
@@ -39,14 +39,14 @@ import rpg_modeling.Rpg_modelingPackage;
  */
 public class FactionImpl extends MinimalEObjectImpl.Container implements Faction {
   /**
-   * The cached value of the '{@link #getGuild() <em>Guild</em>}' containment reference list.
+   * The cached value of the '{@link #getGuilds() <em>Guilds</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGuild()
+   * @see #getGuilds()
    * @generated
    * @ordered
    */
-  protected EList<Guild> guild;
+  protected EList<Guild> guilds;
 
   /**
    * The default value of the '{@link #get_id() <em>id</em>}' attribute.
@@ -109,11 +109,11 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Guild> getGuild() {
-    if (guild == null) {
-      guild = new EObjectContainmentEList<Guild>(Guild.class, this, Rpg_modelingPackage.FACTION__GUILD);
+  public EList<Guild> getGuilds() {
+    if (guilds == null) {
+      guilds = new EObjectContainmentEList<Guild>(Guild.class, this, Rpg_modelingPackage.FACTION__GUILDS);
     }
-    return guild;
+    return guilds;
   }
 
   /**
@@ -166,8 +166,8 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case Rpg_modelingPackage.FACTION__GUILD:
-        return ((InternalEList<?>)getGuild()).basicRemove(otherEnd, msgs);
+      case Rpg_modelingPackage.FACTION__GUILDS:
+        return ((InternalEList<?>)getGuilds()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -180,8 +180,8 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case Rpg_modelingPackage.FACTION__GUILD:
-        return getGuild();
+      case Rpg_modelingPackage.FACTION__GUILDS:
+        return getGuilds();
       case Rpg_modelingPackage.FACTION__ID:
         return get_id();
       case Rpg_modelingPackage.FACTION__NAME:
@@ -199,9 +199,9 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case Rpg_modelingPackage.FACTION__GUILD:
-        getGuild().clear();
-        getGuild().addAll((Collection<? extends Guild>)newValue);
+      case Rpg_modelingPackage.FACTION__GUILDS:
+        getGuilds().clear();
+        getGuilds().addAll((Collection<? extends Guild>)newValue);
         return;
       case Rpg_modelingPackage.FACTION__ID:
         set_id((Integer)newValue);
@@ -221,8 +221,8 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case Rpg_modelingPackage.FACTION__GUILD:
-        getGuild().clear();
+      case Rpg_modelingPackage.FACTION__GUILDS:
+        getGuilds().clear();
         return;
       case Rpg_modelingPackage.FACTION__ID:
         set_id(_ID_EDEFAULT);
@@ -242,8 +242,8 @@ public class FactionImpl extends MinimalEObjectImpl.Container implements Faction
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case Rpg_modelingPackage.FACTION__GUILD:
-        return guild != null && !guild.isEmpty();
+      case Rpg_modelingPackage.FACTION__GUILDS:
+        return guilds != null && !guilds.isEmpty();
       case Rpg_modelingPackage.FACTION__ID:
         return _id != _ID_EDEFAULT;
       case Rpg_modelingPackage.FACTION__NAME:

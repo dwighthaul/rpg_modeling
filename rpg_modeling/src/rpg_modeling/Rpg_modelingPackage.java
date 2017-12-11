@@ -95,13 +95,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int CHARACTER__MP = 2;
 
   /**
-   * The feature id for the '<em><b>Strenght</b></em>' attribute.
+   * The feature id for the '<em><b>Strength</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CHARACTER__STRENGHT = 3;
+  int CHARACTER__STRENGTH = 3;
 
   /**
    * The feature id for the '<em><b>Constitution</b></em>' attribute.
@@ -158,13 +158,22 @@ public interface Rpg_modelingPackage extends EPackage {
   int CHARACTER__EQUIPMENT = 9;
 
   /**
+   * The feature id for the '<em><b>id</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CHARACTER__ID = 10;
+
+  /**
    * The number of structural features of the '<em>Character</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CHARACTER_FEATURE_COUNT = 10;
+  int CHARACTER_FEATURE_COUNT = 11;
 
   /**
    * The number of operations of the '<em>Character</em>' class.
@@ -213,13 +222,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int NON_PLAYER_CHARACTER__MP = CHARACTER__MP;
 
   /**
-   * The feature id for the '<em><b>Strenght</b></em>' attribute.
+   * The feature id for the '<em><b>Strength</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int NON_PLAYER_CHARACTER__STRENGHT = CHARACTER__STRENGHT;
+  int NON_PLAYER_CHARACTER__STRENGTH = CHARACTER__STRENGTH;
 
   /**
    * The feature id for the '<em><b>Constitution</b></em>' attribute.
@@ -274,6 +283,15 @@ public interface Rpg_modelingPackage extends EPackage {
    * @ordered
    */
   int NON_PLAYER_CHARACTER__EQUIPMENT = CHARACTER__EQUIPMENT;
+
+  /**
+   * The feature id for the '<em><b>id</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NON_PLAYER_CHARACTER__ID = CHARACTER__ID;
 
   /**
    * The number of structural features of the '<em>Non Player Character</em>' class.
@@ -452,85 +470,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int PLAYER_ARMOR = 4;
 
   /**
-   * The feature id for the '<em><b>Equipmentobject</b></em>' containment reference list.
+   * The feature id for the '<em><b>Equipmentobjects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAYER_ARMOR__EQUIPMENTOBJECT = 0;
-
-  /**
-   * The feature id for the '<em><b>Head</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__HEAD = 1;
-
-  /**
-   * The feature id for the '<em><b>Arm</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__ARM = 2;
-
-  /**
-   * The feature id for the '<em><b>Chest</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__CHEST = 3;
-
-  /**
-   * The feature id for the '<em><b>Leg</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__LEG = 4;
-
-  /**
-   * The feature id for the '<em><b>Right hand</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__RIGHT_HAND = 5;
-
-  /**
-   * The feature id for the '<em><b>Left hand</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__LEFT_HAND = 6;
-
-  /**
-   * The feature id for the '<em><b>Hand</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__HAND = 7;
-
-  /**
-   * The feature id for the '<em><b>Foot</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PLAYER_ARMOR__FOOT = 8;
+  int PLAYER_ARMOR__EQUIPMENTOBJECTS = 0;
 
   /**
    * The number of structural features of the '<em>Player Armor</em>' class.
@@ -539,7 +485,7 @@ public interface Rpg_modelingPackage extends EPackage {
    * @generated
    * @ordered
    */
-  int PLAYER_ARMOR_FEATURE_COUNT = 9;
+  int PLAYER_ARMOR_FEATURE_COUNT = 1;
 
   /**
    * The number of operations of the '<em>Player Armor</em>' class.
@@ -625,13 +571,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int PLAYER__MP = CHARACTER__MP;
 
   /**
-   * The feature id for the '<em><b>Strenght</b></em>' attribute.
+   * The feature id for the '<em><b>Strength</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAYER__STRENGHT = CHARACTER__STRENGHT;
+  int PLAYER__STRENGTH = CHARACTER__STRENGTH;
 
   /**
    * The feature id for the '<em><b>Constitution</b></em>' attribute.
@@ -686,6 +632,15 @@ public interface Rpg_modelingPackage extends EPackage {
    * @ordered
    */
   int PLAYER__EQUIPMENT = CHARACTER__EQUIPMENT;
+
+  /**
+   * The feature id for the '<em><b>id</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PLAYER__ID = CHARACTER__ID;
 
   /**
    * The feature id for the '<em><b>Guild</b></em>' reference.
@@ -789,13 +744,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int GUILD__GUILDINVENTORY = 0;
 
   /**
-   * The feature id for the '<em><b>Player</b></em>' reference list.
+   * The feature id for the '<em><b>Players</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GUILD__PLAYER = 1;
+  int GUILD__PLAYERS = 1;
 
   /**
    * The feature id for the '<em><b>id</b></em>' attribute.
@@ -899,13 +854,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int FACTION = 11;
 
   /**
-   * The feature id for the '<em><b>Guild</b></em>' containment reference list.
+   * The feature id for the '<em><b>Guilds</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int FACTION__GUILD = 0;
+  int FACTION__GUILDS = 0;
 
   /**
    * The feature id for the '<em><b>id</b></em>' attribute.
@@ -1027,13 +982,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int INVENTORY__QTE_MONEY = 0;
 
   /**
-   * The feature id for the '<em><b>Gameobject</b></em>' containment reference list.
+   * The feature id for the '<em><b>Gameobjects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int INVENTORY__GAMEOBJECT = 1;
+  int INVENTORY__GAMEOBJECTS = 1;
 
   /**
    * The number of structural features of the '<em>Inventory</em>' class.
@@ -1073,13 +1028,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int PLAYER_INVENTORY__QTE_MONEY = INVENTORY__QTE_MONEY;
 
   /**
-   * The feature id for the '<em><b>Gameobject</b></em>' containment reference list.
+   * The feature id for the '<em><b>Gameobjects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAYER_INVENTORY__GAMEOBJECT = INVENTORY__GAMEOBJECT;
+  int PLAYER_INVENTORY__GAMEOBJECTS = INVENTORY__GAMEOBJECTS;
 
   /**
    * The number of structural features of the '<em>Player Inventory</em>' class.
@@ -1256,13 +1211,13 @@ public interface Rpg_modelingPackage extends EPackage {
   int GUILD_INVENTORY__QTE_MONEY = INVENTORY__QTE_MONEY;
 
   /**
-   * The feature id for the '<em><b>Gameobject</b></em>' containment reference list.
+   * The feature id for the '<em><b>Gameobjects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GUILD_INVENTORY__GAMEOBJECT = INVENTORY__GAMEOBJECT;
+  int GUILD_INVENTORY__GAMEOBJECTS = INVENTORY__GAMEOBJECTS;
 
   /**
    * The number of structural features of the '<em>Guild Inventory</em>' class.
@@ -1293,22 +1248,22 @@ public interface Rpg_modelingPackage extends EPackage {
   int GAME_ENGINE = 19;
 
   /**
-   * The feature id for the '<em><b>Faction</b></em>' containment reference list.
+   * The feature id for the '<em><b>Factions</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GAME_ENGINE__FACTION = 0;
+  int GAME_ENGINE__FACTIONS = 0;
 
   /**
-   * The feature id for the '<em><b>Character</b></em>' containment reference list.
+   * The feature id for the '<em><b>Characters</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GAME_ENGINE__CHARACTER = 1;
+  int GAME_ENGINE__CHARACTERS = 1;
 
   /**
    * The number of structural features of the '<em>Game Engine</em>' class.
@@ -1454,103 +1409,15 @@ public interface Rpg_modelingPackage extends EPackage {
   EClass getPlayerArmor();
 
   /**
-   * Returns the meta object for the containment reference list '{@link rpg_modeling.PlayerArmor#getEquipmentobject <em>Equipmentobject</em>}'.
+   * Returns the meta object for the containment reference list '{@link rpg_modeling.PlayerArmor#getEquipmentobjects <em>Equipmentobjects</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Equipmentobject</em>'.
-   * @see rpg_modeling.PlayerArmor#getEquipmentobject()
+   * @return the meta object for the containment reference list '<em>Equipmentobjects</em>'.
+   * @see rpg_modeling.PlayerArmor#getEquipmentobjects()
    * @see #getPlayerArmor()
    * @generated
    */
-  EReference getPlayerArmor_Equipmentobject();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getHead <em>Head</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Head</em>'.
-   * @see rpg_modeling.PlayerArmor#getHead()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Head();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getArm <em>Arm</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Arm</em>'.
-   * @see rpg_modeling.PlayerArmor#getArm()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Arm();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getChest <em>Chest</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Chest</em>'.
-   * @see rpg_modeling.PlayerArmor#getChest()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Chest();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getLeg <em>Leg</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Leg</em>'.
-   * @see rpg_modeling.PlayerArmor#getLeg()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Leg();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getRight_hand <em>Right hand</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Right hand</em>'.
-   * @see rpg_modeling.PlayerArmor#getRight_hand()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Right_hand();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getLeft_hand <em>Left hand</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Left hand</em>'.
-   * @see rpg_modeling.PlayerArmor#getLeft_hand()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Left_hand();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getHand <em>Hand</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Hand</em>'.
-   * @see rpg_modeling.PlayerArmor#getHand()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Hand();
-
-  /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.PlayerArmor#getFoot <em>Foot</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Foot</em>'.
-   * @see rpg_modeling.PlayerArmor#getFoot()
-   * @see #getPlayerArmor()
-   * @generated
-   */
-  EAttribute getPlayerArmor_Foot();
+  EReference getPlayerArmor_Equipmentobjects();
 
   /**
    * Returns the meta object for class '{@link rpg_modeling.Assassin <em>Assassin</em>}'.
@@ -1669,15 +1536,15 @@ public interface Rpg_modelingPackage extends EPackage {
   EReference getGuild_Guildinventory();
 
   /**
-   * Returns the meta object for the reference list '{@link rpg_modeling.Guild#getPlayer <em>Player</em>}'.
+   * Returns the meta object for the reference list '{@link rpg_modeling.Guild#getPlayers <em>Players</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Player</em>'.
-   * @see rpg_modeling.Guild#getPlayer()
+   * @return the meta object for the reference list '<em>Players</em>'.
+   * @see rpg_modeling.Guild#getPlayers()
    * @see #getGuild()
    * @generated
    */
-  EReference getGuild_Player();
+  EReference getGuild_Players();
 
   /**
    * Returns the meta object for the attribute '{@link rpg_modeling.Guild#get_id <em>id</em>}'.
@@ -1755,15 +1622,15 @@ public interface Rpg_modelingPackage extends EPackage {
   EClass getFaction();
 
   /**
-   * Returns the meta object for the containment reference list '{@link rpg_modeling.Faction#getGuild <em>Guild</em>}'.
+   * Returns the meta object for the containment reference list '{@link rpg_modeling.Faction#getGuilds <em>Guilds</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Guild</em>'.
-   * @see rpg_modeling.Faction#getGuild()
+   * @return the meta object for the containment reference list '<em>Guilds</em>'.
+   * @see rpg_modeling.Faction#getGuilds()
    * @see #getFaction()
    * @generated
    */
-  EReference getFaction_Guild();
+  EReference getFaction_Guilds();
 
   /**
    * Returns the meta object for the attribute '{@link rpg_modeling.Faction#get_id <em>id</em>}'.
@@ -1862,15 +1729,15 @@ public interface Rpg_modelingPackage extends EPackage {
   EAttribute getCharacter_Mp();
 
   /**
-   * Returns the meta object for the attribute '{@link rpg_modeling.Character#getStrenght <em>Strenght</em>}'.
+   * Returns the meta object for the attribute '{@link rpg_modeling.Character#getStrength <em>Strength</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Strenght</em>'.
-   * @see rpg_modeling.Character#getStrenght()
+   * @return the meta object for the attribute '<em>Strength</em>'.
+   * @see rpg_modeling.Character#getStrength()
    * @see #getCharacter()
    * @generated
    */
-  EAttribute getCharacter_Strenght();
+  EAttribute getCharacter_Strength();
 
   /**
    * Returns the meta object for the attribute '{@link rpg_modeling.Character#getConstitution <em>Constitution</em>}'.
@@ -1937,6 +1804,17 @@ public interface Rpg_modelingPackage extends EPackage {
    * @generated
    */
   EReference getCharacter_Equipment();
+
+  /**
+   * Returns the meta object for the attribute '{@link rpg_modeling.Character#get_id <em>id</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>id</em>'.
+   * @see rpg_modeling.Character#get_id()
+   * @see #getCharacter()
+   * @generated
+   */
+  EAttribute getCharacter__id();
 
   /**
    * Returns the meta object for class '{@link rpg_modeling.QuestObject <em>Quest Object</em>}'.
@@ -2023,15 +1901,15 @@ public interface Rpg_modelingPackage extends EPackage {
   EAttribute getInventory_QteMoney();
 
   /**
-   * Returns the meta object for the containment reference list '{@link rpg_modeling.Inventory#getGameobject <em>Gameobject</em>}'.
+   * Returns the meta object for the containment reference list '{@link rpg_modeling.Inventory#getGameobjects <em>Gameobjects</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Gameobject</em>'.
-   * @see rpg_modeling.Inventory#getGameobject()
+   * @return the meta object for the containment reference list '<em>Gameobjects</em>'.
+   * @see rpg_modeling.Inventory#getGameobjects()
    * @see #getInventory()
    * @generated
    */
-  EReference getInventory_Gameobject();
+  EReference getInventory_Gameobjects();
 
   /**
    * Returns the meta object for class '{@link rpg_modeling.GameEngine <em>Game Engine</em>}'.
@@ -2044,26 +1922,26 @@ public interface Rpg_modelingPackage extends EPackage {
   EClass getGameEngine();
 
   /**
-   * Returns the meta object for the containment reference list '{@link rpg_modeling.GameEngine#getFaction <em>Faction</em>}'.
+   * Returns the meta object for the containment reference list '{@link rpg_modeling.GameEngine#getFactions <em>Factions</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Faction</em>'.
-   * @see rpg_modeling.GameEngine#getFaction()
+   * @return the meta object for the containment reference list '<em>Factions</em>'.
+   * @see rpg_modeling.GameEngine#getFactions()
    * @see #getGameEngine()
    * @generated
    */
-  EReference getGameEngine_Faction();
+  EReference getGameEngine_Factions();
 
   /**
-   * Returns the meta object for the containment reference list '{@link rpg_modeling.GameEngine#getCharacter <em>Character</em>}'.
+   * Returns the meta object for the containment reference list '{@link rpg_modeling.GameEngine#getCharacters <em>Characters</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Character</em>'.
-   * @see rpg_modeling.GameEngine#getCharacter()
+   * @return the meta object for the containment reference list '<em>Characters</em>'.
+   * @see rpg_modeling.GameEngine#getCharacters()
    * @see #getGameEngine()
    * @generated
    */
-  EReference getGameEngine_Character();
+  EReference getGameEngine_Characters();
 
   /**
    * Returns the meta object for enum '{@link rpg_modeling.Grades <em>Grades</em>}'.
@@ -2201,76 +2079,12 @@ public interface Rpg_modelingPackage extends EPackage {
     EClass PLAYER_ARMOR = eINSTANCE.getPlayerArmor();
 
     /**
-     * The meta object literal for the '<em><b>Equipmentobject</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Equipmentobjects</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PLAYER_ARMOR__EQUIPMENTOBJECT = eINSTANCE.getPlayerArmor_Equipmentobject();
-
-    /**
-     * The meta object literal for the '<em><b>Head</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__HEAD = eINSTANCE.getPlayerArmor_Head();
-
-    /**
-     * The meta object literal for the '<em><b>Arm</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__ARM = eINSTANCE.getPlayerArmor_Arm();
-
-    /**
-     * The meta object literal for the '<em><b>Chest</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__CHEST = eINSTANCE.getPlayerArmor_Chest();
-
-    /**
-     * The meta object literal for the '<em><b>Leg</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__LEG = eINSTANCE.getPlayerArmor_Leg();
-
-    /**
-     * The meta object literal for the '<em><b>Right hand</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__RIGHT_HAND = eINSTANCE.getPlayerArmor_Right_hand();
-
-    /**
-     * The meta object literal for the '<em><b>Left hand</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__LEFT_HAND = eINSTANCE.getPlayerArmor_Left_hand();
-
-    /**
-     * The meta object literal for the '<em><b>Hand</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__HAND = eINSTANCE.getPlayerArmor_Hand();
-
-    /**
-     * The meta object literal for the '<em><b>Foot</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PLAYER_ARMOR__FOOT = eINSTANCE.getPlayerArmor_Foot();
+    EReference PLAYER_ARMOR__EQUIPMENTOBJECTS = eINSTANCE.getPlayerArmor_Equipmentobjects();
 
     /**
      * The meta object literal for the '{@link rpg_modeling.impl.AssassinImpl <em>Assassin</em>}' class.
@@ -2371,12 +2185,12 @@ public interface Rpg_modelingPackage extends EPackage {
     EReference GUILD__GUILDINVENTORY = eINSTANCE.getGuild_Guildinventory();
 
     /**
-     * The meta object literal for the '<em><b>Player</b></em>' reference list feature.
+     * The meta object literal for the '<em><b>Players</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference GUILD__PLAYER = eINSTANCE.getGuild_Player();
+    EReference GUILD__PLAYERS = eINSTANCE.getGuild_Players();
 
     /**
      * The meta object literal for the '<em><b>id</b></em>' attribute feature.
@@ -2439,12 +2253,12 @@ public interface Rpg_modelingPackage extends EPackage {
     EClass FACTION = eINSTANCE.getFaction();
 
     /**
-     * The meta object literal for the '<em><b>Guild</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Guilds</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference FACTION__GUILD = eINSTANCE.getFaction_Guild();
+    EReference FACTION__GUILDS = eINSTANCE.getFaction_Guilds();
 
     /**
      * The meta object literal for the '<em><b>id</b></em>' attribute feature.
@@ -2525,12 +2339,12 @@ public interface Rpg_modelingPackage extends EPackage {
     EAttribute CHARACTER__MP = eINSTANCE.getCharacter_Mp();
 
     /**
-     * The meta object literal for the '<em><b>Strenght</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Strength</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CHARACTER__STRENGHT = eINSTANCE.getCharacter_Strenght();
+    EAttribute CHARACTER__STRENGTH = eINSTANCE.getCharacter_Strength();
 
     /**
      * The meta object literal for the '<em><b>Constitution</b></em>' attribute feature.
@@ -2579,6 +2393,14 @@ public interface Rpg_modelingPackage extends EPackage {
      * @generated
      */
     EReference CHARACTER__EQUIPMENT = eINSTANCE.getCharacter_Equipment();
+
+    /**
+     * The meta object literal for the '<em><b>id</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CHARACTER__ID = eINSTANCE.getCharacter__id();
 
     /**
      * The meta object literal for the '{@link rpg_modeling.impl.QuestObjectImpl <em>Quest Object</em>}' class.
@@ -2653,12 +2475,12 @@ public interface Rpg_modelingPackage extends EPackage {
     EAttribute INVENTORY__QTE_MONEY = eINSTANCE.getInventory_QteMoney();
 
     /**
-     * The meta object literal for the '<em><b>Gameobject</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Gameobjects</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference INVENTORY__GAMEOBJECT = eINSTANCE.getInventory_Gameobject();
+    EReference INVENTORY__GAMEOBJECTS = eINSTANCE.getInventory_Gameobjects();
 
     /**
      * The meta object literal for the '{@link rpg_modeling.impl.GameEngineImpl <em>Game Engine</em>}' class.
@@ -2671,20 +2493,20 @@ public interface Rpg_modelingPackage extends EPackage {
     EClass GAME_ENGINE = eINSTANCE.getGameEngine();
 
     /**
-     * The meta object literal for the '<em><b>Faction</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Factions</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference GAME_ENGINE__FACTION = eINSTANCE.getGameEngine_Faction();
+    EReference GAME_ENGINE__FACTIONS = eINSTANCE.getGameEngine_Factions();
 
     /**
-     * The meta object literal for the '<em><b>Character</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Characters</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference GAME_ENGINE__CHARACTER = eINSTANCE.getGameEngine_Character();
+    EReference GAME_ENGINE__CHARACTERS = eINSTANCE.getGameEngine_Characters();
 
     /**
      * The meta object literal for the '{@link rpg_modeling.Grades <em>Grades</em>}' enum.

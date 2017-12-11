@@ -139,9 +139,9 @@ public class PlayerImpl extends CharacterImpl implements Player {
     if (newGuild != guild) {
       NotificationChain msgs = null;
       if (guild != null)
-        msgs = ((InternalEObject)guild).eInverseRemove(this, Rpg_modelingPackage.GUILD__PLAYER, Guild.class, msgs);
+        msgs = ((InternalEObject)guild).eInverseRemove(this, Rpg_modelingPackage.GUILD__PLAYERS, Guild.class, msgs);
       if (newGuild != null)
-        msgs = ((InternalEObject)newGuild).eInverseAdd(this, Rpg_modelingPackage.GUILD__PLAYER, Guild.class, msgs);
+        msgs = ((InternalEObject)newGuild).eInverseAdd(this, Rpg_modelingPackage.GUILD__PLAYERS, Guild.class, msgs);
       msgs = basicSetGuild(newGuild, msgs);
       if (msgs != null) msgs.dispatch();
     }
@@ -223,7 +223,7 @@ public class PlayerImpl extends CharacterImpl implements Player {
     switch (featureID) {
       case Rpg_modelingPackage.PLAYER__GUILD:
         if (guild != null)
-          msgs = ((InternalEObject)guild).eInverseRemove(this, Rpg_modelingPackage.GUILD__PLAYER, Guild.class, msgs);
+          msgs = ((InternalEObject)guild).eInverseRemove(this, Rpg_modelingPackage.GUILD__PLAYERS, Guild.class, msgs);
         return basicSetGuild((Guild)otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);

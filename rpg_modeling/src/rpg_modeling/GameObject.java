@@ -34,7 +34,7 @@ public interface GameObject extends EObject {
    * @return the value of the '<em>id</em>' attribute.
    * @see #set_id(int)
    * @see rpg_modeling.Rpg_modelingPackage#getGameObject__id()
-   * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model id="true"
    * @generated
    */
   int get_id();
@@ -60,7 +60,7 @@ public interface GameObject extends EObject {
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
    * @see rpg_modeling.Rpg_modelingPackage#getGameObject_Name()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   * @model
    * @generated
    */
   String getName();
@@ -86,7 +86,7 @@ public interface GameObject extends EObject {
    * @return the value of the '<em>Price</em>' attribute.
    * @see #setPrice(int)
    * @see rpg_modeling.Rpg_modelingPackage#getGameObject_Price()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model
    * @generated
    */
   int getPrice();

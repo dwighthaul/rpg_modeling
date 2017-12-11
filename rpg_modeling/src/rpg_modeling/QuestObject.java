@@ -31,7 +31,7 @@ public interface QuestObject extends GameObject {
    * @return the value of the '<em>id Quest</em>' attribute.
    * @see #set_idQuest(int)
    * @see rpg_modeling.Rpg_modelingPackage#getQuestObject__idQuest()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+   * @model
    * @generated
    */
   int get_idQuest();

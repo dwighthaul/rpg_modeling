@@ -27,7 +27,7 @@ import rpg_modeling.Rpg_modelingPackage;
  * </p>
  * <ul>
  *   <li>{@link rpg_modeling.impl.InventoryImpl#getQteMoney <em>Qte Money</em>}</li>
- *   <li>{@link rpg_modeling.impl.InventoryImpl#getGameobject <em>Gameobject</em>}</li>
+ *   <li>{@link rpg_modeling.impl.InventoryImpl#getGameobjects <em>Gameobjects</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,15 +52,14 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
    */
   protected int qteMoney = QTE_MONEY_EDEFAULT;
   /**
-   * The cached value of the '{@link #getGameobject() <em>Gameobject</em>}' containment reference list.
+   * The cached value of the '{@link #getGameobjects() <em>Gameobjects</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGameobject()
+   * @see #getGameobjects()
    * @generated
    * @ordered
    */
-  protected EList<GameObject> gameobject;
-
+  protected EList<GameObject> gameobjects;
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -106,11 +105,11 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<GameObject> getGameobject() {
-    if (gameobject == null) {
-      gameobject = new EObjectContainmentEList<GameObject>(GameObject.class, this, Rpg_modelingPackage.INVENTORY__GAMEOBJECT);
+  public EList<GameObject> getGameobjects() {
+    if (gameobjects == null) {
+      gameobjects = new EObjectContainmentEList<GameObject>(GameObject.class, this, Rpg_modelingPackage.INVENTORY__GAMEOBJECTS);
     }
-    return gameobject;
+    return gameobjects;
   }
 
   /**
@@ -121,8 +120,8 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case Rpg_modelingPackage.INVENTORY__GAMEOBJECT:
-        return ((InternalEList<?>)getGameobject()).basicRemove(otherEnd, msgs);
+      case Rpg_modelingPackage.INVENTORY__GAMEOBJECTS:
+        return ((InternalEList<?>)getGameobjects()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -137,8 +136,8 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID) {
       case Rpg_modelingPackage.INVENTORY__QTE_MONEY:
         return getQteMoney();
-      case Rpg_modelingPackage.INVENTORY__GAMEOBJECT:
-        return getGameobject();
+      case Rpg_modelingPackage.INVENTORY__GAMEOBJECTS:
+        return getGameobjects();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -155,9 +154,9 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
       case Rpg_modelingPackage.INVENTORY__QTE_MONEY:
         setQteMoney((Integer)newValue);
         return;
-      case Rpg_modelingPackage.INVENTORY__GAMEOBJECT:
-        getGameobject().clear();
-        getGameobject().addAll((Collection<? extends GameObject>)newValue);
+      case Rpg_modelingPackage.INVENTORY__GAMEOBJECTS:
+        getGameobjects().clear();
+        getGameobjects().addAll((Collection<? extends GameObject>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -174,8 +173,8 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
       case Rpg_modelingPackage.INVENTORY__QTE_MONEY:
         setQteMoney(QTE_MONEY_EDEFAULT);
         return;
-      case Rpg_modelingPackage.INVENTORY__GAMEOBJECT:
-        getGameobject().clear();
+      case Rpg_modelingPackage.INVENTORY__GAMEOBJECTS:
+        getGameobjects().clear();
         return;
     }
     super.eUnset(featureID);
@@ -191,8 +190,8 @@ public abstract class InventoryImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID) {
       case Rpg_modelingPackage.INVENTORY__QTE_MONEY:
         return qteMoney != QTE_MONEY_EDEFAULT;
-      case Rpg_modelingPackage.INVENTORY__GAMEOBJECT:
-        return gameobject != null && !gameobject.isEmpty();
+      case Rpg_modelingPackage.INVENTORY__GAMEOBJECTS:
+        return gameobjects != null && !gameobjects.isEmpty();
     }
     return super.eIsSet(featureID);
   }
